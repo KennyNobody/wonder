@@ -1,0 +1,17 @@
+.sms {
+	background-color: $blue;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	color: $light;
+	&__text {
+		margin-bottom: 14px;
+		text-align: center;
+		strong {
+			display: inline-block;
+			background-color: $orange;
+			padding-left: 3px;
+			padding-right: 3px;
+			font-weight: 600;
+		}
+	}
+}

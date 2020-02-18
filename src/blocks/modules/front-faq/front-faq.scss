@@ -1,0 +1,55 @@
+.front-faq {
+	padding-top: 50px;
+	padding-bottom: 56px;
+	&__title {
+		margin-bottom: 75px;
+	}
+	&__articles {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 56px;
+	}
+	&__btn {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__article {
+		display: block;
+		width: 246px;
+		color: $dark;
+		text-decoration: none;
+		text-align: center;
+		&:hover {
+			opacity: 0.75;
+		}
+	}
+	&__icon {
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		width: 124px;
+		height: 124px;
+		justify-content: center;
+		align-items: center;
+		border: 2px dashed $green;
+		box-sizing: border-box;
+		border-radius: 100px;
+		margin-bottom: 20px;
+	}
+	&__subicon {
+		width: 102px;
+		height: 102px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 100px;
+		background-color: $green;
+		svg {
+			width: 50%;
+			height: 50%;
+		}
+	}
+	&__question {
+
+	}
+}

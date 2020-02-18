@@ -1,0 +1,17 @@
+.front-news {
+	padding-top: 50px;
+	padding-bottom: 56px;
+	&__title {
+		margin-bottom: 50px;
+	}
+	&__articles {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 56px;
+		flex-wrap: wrap;
+	}
+	&__btn {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

@@ -1,0 +1,23 @@
+.socials {
+	&__link {
+		display: inline-block;
+		margin-right: 6px;
+		&:last-child {
+			margin-right: 0px;
+		}
+		svg {
+			width: 24px;
+			height: 24px;
+			display: block;
+		}
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+	&__header {
+
+	}
+	&__footer {
+
+	}
+}

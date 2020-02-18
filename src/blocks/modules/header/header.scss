@@ -1,0 +1,148 @@
+.header {
+	padding-top: 27px;
+	padding-bottom: 6px;
+	&__line {
+		position: relative;
+		&--1 {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 10px;
+		}
+		&--2 {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+		}
+		&--drop {
+			.dropdown {
+				opacity: 1;
+				max-height: 1800px;
+			}
+		}
+	}
+	&__langs {
+		color: $blue;
+	}
+	&__lang-link {
+		text-decoration: none;
+		font-weight: 500;
+		color: $blue;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+	&__phone {
+		text-decoration: none;
+		color: $dark;
+		strong {
+			font-weight: 800;
+			font-size: 18px;
+			line-height: 27px;
+		}
+	}
+	&__btn {
+		border: 2px solid $orange;
+		box-sizing: border-box;
+		border-radius: 4px;
+		color: $dark;
+		text-decoration: none;
+		padding: 8px 15px;
+		&:hover {
+			background-color: $orange;
+			color: $light;
+		}
+	}
+	&__search {
+		position: relative;
+		input {
+			width: 422px;
+			height: 36px;
+			padding-left: 17px;
+			padding-right: 17px;
+			box-sizing: border-box;
+			border: 1px solid $green;
+			box-sizing: border-box;
+			border-radius: 4px;
+			font-family: $main-font;
+			font-size: 16px;
+			line-height: 24px;
+			color: $green;
+		}
+	}
+	&__burger {
+		cursor: pointer;
+		transition: 0.3s all;
+		padding: 8px 8px 8px 0px;
+		svg {
+			height: 22px;
+			width: 22px;
+			display: block;
+		}
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+	&__nav {
+
+	}
+	&__link {
+		color: $dark;
+		text-decoration: none;
+		margin-right: 32px;
+		&:hover {
+			opacity: 0.6;
+		}
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+}
+
+.dropdown {
+	background-color: $dark;
+	color: $light;
+	z-index: 3;
+	max-height: 0px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	position: absolute;
+	overflow: hidden;
+	transition: 0.3s all;
+	opacity: 0;
+	&__content {
+		padding: 10px 248px 50px 88px;
+		box-sizing: border-box;
+	}
+}
+
+// .header2 {
+// 	border-top: 1px solid red;
+// 	padding-top: 10px;
+// 	padding-bottom: 10px;
+// 	&__container {
+// 		align-items: center;
+// 		display: flex;
+// 		justify-content: space-between;
+// 	}
+// 	&__line {
+// 		&--1 {
+
+// 		}
+// 		&--2 {
+
+// 		}
+// 	}
+// 	&__langs {
+// 		color: $blue;
+// 	}
+// 	&__lang-link {
+// 		text-decoration: none;
+// 		font-weight: 500;
+// 		color: $blue;
+// 		&:hover {
+// 			opacity: 0.5;
+// 		}
+// 	}
+// }
