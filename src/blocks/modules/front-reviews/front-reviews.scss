@@ -1,14 +1,20 @@
 .front-reviews {
 	padding-top: 50px;
-	padding-bottom: 56px;
+	padding-bottom: 90px;
 	&__title {
 		margin-bottom: 75px;
+		@include r(600) {
+			margin-bottom: rem(35px);
+		}
 	}
 	&__articles {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 56px;
 		flex-wrap: wrap;
+		@include r(600) {
+			margin-bottom: rem(35px);
+		}
 	}
 	&__btn {
 		margin-left: auto;

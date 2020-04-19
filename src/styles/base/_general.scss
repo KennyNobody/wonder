@@ -1,8 +1,3 @@
-h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
-}
-
 svg, a {
     transition: 0.3s all;
 }
@@ -23,91 +18,10 @@ svg, a {
     }
 }
 
-.container {
-    width: 1070px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    position: relative;
-}
-
-.title {
-    text-align: center;
-    color: $orange;
-    &--light {
-        color: $light;
-    }
-    &__text {
-        margin-bottom: 5px;
-        font-weight: 800;
-        font-size: 34px;
-        line-height: 36px;
-    }
-    &__discript {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    @include r(1080) {
-
-    }
-}
-
-// .text {
-//     a {
-//         text-decoration: underline;
-//         &:hover {
-//             text-decoration: none;
-//         }
-//     }
-//     p {
-//         margin-bottom: 1em;
-//     }
-//     b, strong {
-//         font-weight: bold;
-//     }
-//     i, em {
-//         font-style: italic;
-//     }
-//     h1, h2, h3, h4, h5, h6 {
-//         font-weight: bold;
-//         margin-bottom: 1em;
-//     }
-//     h1 {
-//         font-size: 30px;
-//         line-height: 38px;
-//         text-transform: uppercase;
-//     }
-//     h2 {
-//         font-size: 26px;
-//     }
-//     h3 {
-//         font-size: 24px;
-//     }
-//     h4 {
-//         font-size: 22px;
-//     }
-//     h5 {
-//         font-size: 20px;
-//     }
-//     ul {
-//         list-style-type: disc;
-//         padding-left: 18px;
-//         margin-bottom: 1em;
-//     }
-//     ol {
-//         list-style-type: decimal;
-//         padding-left: 18px;
-//         margin-bottom: 1em;
-//     }
-// }
-
 .icon-svg {
     transition: 0.3s all;
     height: 1rem;
     width: 1rem;
-    transition: 0.3s all;
 }
 
 input, button {
@@ -127,31 +41,23 @@ input, button {
     }
 }
 
-.btn {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 8px;
-    cursor: pointer;
-    text-decoration: none;
-    color: $dark;
-    &:hover {
-        opacity: 0.75;
+.demo {
+    padding-top: rem(35px);
+    padding-bottom: rem(35px);
+    font-size: rem(18px);
+    &__container {
+        display: flex;
     }
-    &--dasheed {
-        width: 158px;
-        border: 2px dashed $green;
-        box-sizing: border-box;
-        border-radius: 4px;
+    &__column {
+        width: 50%;
     }
-    &--orange {
-        height: 40px;
-        border-radius: 25px;
-        color: $light;
-        background-color: $orange;
-        font-weight: 800;
-        font-size: 16px;
-        line-height: 24px;
-        box-shadow: 2px 2px 6px rgba(250, 135, 61, 0.5);
+    &__link {
+        color: $dark;
+        text-decoration: none;
+        margin-bottom: rem(8px);
+        display: block;
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }

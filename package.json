@@ -59,6 +59,7 @@
         "imagemin-webp": "^5.0.0",
         "imagemin-zopfli": "^6.0.0",
         "lint-staged": "^10.0.3",
+        "pngquant": "^3.0.0",
         "require-dir": "^1.2.0",
         "stylelint": "^10.0.1",
         "stylelint-order": "^3.0.0",
@@ -68,6 +69,8 @@
         "yargs": "^13.2.4"
     },
     "dependencies": {
+        "jquery": "^3.4.1",
+        "mmenu-js": "^8.5.3",
         "smart-grid": "^2.1.2",
         "swiper": "^5.3.1"
     },

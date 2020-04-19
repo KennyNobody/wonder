@@ -1,0 +1,39 @@
+.info {
+	background-color: $blue;
+	color: $light;
+	padding-top: rem(50px);
+	padding-bottom: rem(50px);
+	font-weight: 500;
+	font-size: rem(20px);
+	text-align: center;
+	@include r(1080) {
+		padding-top: rem(35px);
+		padding-bottom: rem(35px);
+		font-size: rem(18px);
+	}
+	&__title {
+		margin-bottom: rem(35px);
+		@include r(1080) {
+			margin-bottom: rem(25px);
+		}
+	}
+	&__text {
+		margin-bottom: rem(35px);
+		@include r(1080) {
+			margin-bottom: rem(20px);
+		}
+	}
+	&__links {
+		display: flex;
+		justify-content: center;
+	}
+	&__link {
+		display: block;
+		svg {
+			height: 40px;
+			width: 40px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+}

@@ -2,6 +2,10 @@
 	display: flex;
 	width: calc(50% - 10px);
 	margin-bottom: 60px;
+	@include r(920) {
+		width: 100%;
+		margin-bottom: rem(25px);
+	}
 	&:nth-child(4n+3) {
 		.review__bg {
 			background-color: $orange;
@@ -31,6 +35,9 @@
 		flex-shrink: 0;
 		margin-right: 27px;
 		min-width: 0px;
+		@include r(600) {
+			display: none;
+		}
 		img {
 			display: block;
 			z-index: 1;
@@ -51,7 +58,7 @@
 	}
 	&__title {
 		font-weight: 600;
-		font-size: 20px;
+		font-size: rem(20px);
 		margin-bottom: 13px;
 	}
 	&__text {

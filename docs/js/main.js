@@ -166,6 +166,46 @@
 
 /***/ }),
 
+/***/ "./src/blocks/modules/friends/friends.js":
+/*!***********************************************!*\
+  !*** ./src/blocks/modules/friends/friends.js ***!
+  \***********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/js/swiper.esm.bundle.js");
+
+var friendSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.friends__slider', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 40,
+  slideVisibleClass: 'none',
+  navigation: {
+    nextEl: '.friends__slider-btn--next',
+    prevEl: '.friends__slider-btn--prev',
+    disabledClass: 'friend__btn--disabled'
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./src/blocks/modules/front-intro/front-intro.js":
 /*!*******************************************************!*\
   !*** ./src/blocks/modules/front-intro/front-intro.js ***!
@@ -212,16 +252,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/js/swiper.esm.bundle.js");
 
 var programsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.front-programs__slider', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
   slidesPerView: 3,
   spaceBetween: 40,
   slideVisibleClass: 'none',
   navigation: {
-    nextEl: '.front-programs__btn--next',
-    prevEl: '.front-programs__btn--prev',
+    nextEl: '.front-programs__slider-btn--next',
+    prevEl: '.front-programs__slider-btn--prev',
     disabledClass: 'front-programs__btn--disabled'
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    680: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    820: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
   }
 });
 
@@ -231,20 +284,56 @@ var programsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.front-
 /*!*********************************************!*\
   !*** ./src/blocks/modules/header/header.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var mmenu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mmenu-js */ "./node_modules/mmenu-js/src/mmenu.js");
+
 
 (function dropMenu() {
   var btn = document.querySelector('.header__burger');
-  var block = document.querySelector('.header__line--2');
+  var block = document.querySelector('.dropdown');
+  var links = document.querySelectorAll('.dropdown a');
+  setTabindex(-1);
+  var menuOpen = false;
 
   if (btn && block) {
     btn.addEventListener('click', toggle);
   }
 
   function toggle() {
-    block.classList.toggle('header__line--drop');
+    if (menuOpen == true) {
+      block.classList.remove('dropdown--open');
+      menuOpen = false;
+      setTabindex(-1);
+    } else {
+      block.classList.add('dropdown--open');
+      menuOpen = true;
+      setTabindex('');
+    }
   }
+
+  function setTabindex(tabindex) {
+    for (var i = 0; i < links.length; i++) {
+      links[i].setAttribute("tabindex", tabindex);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    new mmenu_js__WEBPACK_IMPORTED_MODULE_0__["default"]("#menu", {
+      "extensions": ["pagedim-black", "position-front"],
+      "navbar": {
+        "title": "#ВерюВЧудо",
+        "sticky": false
+      },
+      "navbars": [{
+        "position": "bottom",
+        "content": ["<a class='fa fa-envelope' href='#/'></a>", "<a class='fa fa-twitter' href='#/'></a>", "<a class='fa fa-facebook' href='#/'></a>"]
+      }]
+    });
+  });
 })();
 
 /***/ }),
@@ -284,16 +373,20 @@ var programsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.front-
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_front_intro_front_intro__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/front-intro/front-intro */ "./src/blocks/modules/front-intro/front-intro.js");
-/* harmony import */ var _modules_front_programs_front_programs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/front-programs/front-programs */ "./src/blocks/modules/front-programs/front-programs.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/front-news/front-news */ "./src/blocks/modules/front-news/front-news.js");
-/* harmony import */ var _modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/subscription/subscription */ "./src/blocks/modules/subscription/subscription.js");
-/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
+/* harmony import */ var _modules_front_intro_front_intro__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/front-intro/front-intro */ "./src/blocks/modules/front-intro/front-intro.js");
+/* harmony import */ var _modules_front_programs_front_programs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/front-programs/front-programs */ "./src/blocks/modules/front-programs/front-programs.js");
+/* harmony import */ var _modules_friends_friends__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/friends/friends */ "./src/blocks/modules/friends/friends.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/front-news/front-news */ "./src/blocks/modules/front-news/front-news.js");
+/* harmony import */ var _modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/subscription/subscription */ "./src/blocks/modules/subscription/subscription.js");
+/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_7__);
+
+
 
 
 

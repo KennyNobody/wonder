@@ -1,0 +1,45 @@
+.mm-navbar {
+	background-color: $light;
+	&__title {
+		font-weight: bold;
+	}
+}
+
+.mm-panel {
+	background-color: $light;
+}
+
+#mm-1 {
+	background-image: url('../img/page-decor--left.svg');
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: 90% bottom;
+}
+
+#mm-2 {
+	background-image: url('../img/page-decor--left2.svg');
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: 10% 60%;
+}
+
+#mm-3 {
+	background-image: url('../img/page-decor--right2.svg');
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: 30% 70%;
+}
+
+#mm-4 {
+	background-image: url('../img/page-decor--right.svg');
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: 90% 90%;
+}
+
+#mm-5 {
+	background-image: url('../img/page-decor--left2.svg');
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: 10% 90%;
+}

@@ -1,23 +1,140 @@
 .footer {
-	font-size: 14px;
-	
 	&__section {
 		&--top {
 			padding-top: 44px;
 			padding-bottom: 44px;
+			font-size: rem(16px);
 		}
 		&--bottom {
 			background-color: $dark;
 			color: $light;
 			padding-top: 38px;
 			padding-bottom: 38px;
+			font-size: rem(14px);
+			text-align: center;
+			a {
+				color: #EA4238;
+				text-decoration: none;
+				&:hover {
+					color: $light;
+				}
+			}
 		}
 	}
-	a {
-		color: #EA4238;
+	&__container {
+		&--top {
+			display: flex;
+			@include r(1080) {
+				flex-wrap: wrap;
+			}
+		}
+	}
+	&__column {
+		&--1 {
+			@include r(1080) {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			@include r(700) {
+				margin-bottom: rem(50px);
+				// text-align: left;
+			}
+		}
+		&--2 {
+			@include r(1080) {
+				width: 50%;
+				padding-right: 25px;
+
+			}
+			@include r(700) {
+				text-align: center;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+		&--3 {
+			@include r(1080) {
+				width: 25%;
+				padding-right: 25px;
+			}
+			@include r(700) {
+				width: 50%;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			@include r(480) {
+				width: 100%;
+			}
+		}
+		&--4 {
+			@include r(1080) {
+				width: 25%;
+				padding-right: 25px;
+			}
+			@include r(700) {
+				width: 50%;
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			@include r(480) {
+				width: 100%;
+			}
+		}
+	}
+	&__link {
+		color: $dark;
 		text-decoration: none;
+		display: block;
+		margin-bottom: 27px;
+		text-decoration: none;
+		@include r(480) {
+			margin-bottom: 16px;
+		}
 		&:hover {
-			color: $light;
+			opacity: 0.7;
+		}
+		&:last-child {
+			margin-bottom: 0px;
+		}
+
+	}
+	&__icon-link {
+		display: flex;
+		margin-bottom: rem(18px);
+		color: $dark;
+		text-decoration: none;
+		&--active {
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+		svg {
+			width: rem(24px);
+			height: rem(24px);
+			margin-right: 11px;
+			flex-shrink:0;
+		}
+		span {
+
+		}
+		@include r(700) {
+			justify-content: center;
 		}
 	}
+	&__logo {
+		margin-bottom: 15px;
+		display: inline-block;
+		width: 160px;
+		height: 84px;
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	
 }

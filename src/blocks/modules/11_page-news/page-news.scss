@@ -1,0 +1,11 @@
+.page-news {
+	&__title {
+		margin-bottom: rem(18px);
+		text-align: left;
+	}
+	&__articles {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
