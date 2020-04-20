@@ -46,6 +46,15 @@
         line-height: rem(24px);
         box-shadow: 2px 2px 6px rgba(250, 135, 61, 0.5);
     }
+    &--light {
+        height: 40px;
+        border-radius: 25px;
+        color: $blue;
+        background-color: $light;
+        font-weight: 800;
+        font-size: rem(16px);
+        line-height: rem(24px);
+    }
 }
 
 .slider-btn {

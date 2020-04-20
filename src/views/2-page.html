@@ -1,26 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>2.Помочь детям</title>
-        @@include("../blocks/modules/head/head.html")
-    </head>
-    <body class="body">
-        @@include("../blocks/modules/header/header.html")
-        <section class="decor">
-            <div class="container">
-                <!-- <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент"> -->
-                <!-- <img class="decor decor--right" src="img/page-decor--right.svg" alt="Орнамент"> -->
-            </div> 
-        </section>
-        @@include("../blocks/modules/front-intro/front-intro.html")
-        @@include("../blocks/modules/front-help/front-help.html")
-        @@include("../blocks/modules/front-programs/front-programs.html")
-        @@include("../blocks/modules/front-news/front-news.html")
-        @@include("../blocks/modules/sms/sms.html")
-        @@include("../blocks/modules/front-faq/front-faq.html")
-        @@include("../blocks/modules/front-reviews/front-reviews.html")
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="js/vendor.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+<head>
+    <title>2.Помочь детям</title>
+    @@include("../blocks/modules/head/head.html")
+</head>
+<body class="body">
+    @@include("../blocks/modules/header/header.html")
+    <section class="decor">
+        <div class="container">
+            <!-- <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент"> -->
+            <!-- <img class="decor decor--right" src="img/page-decor--right.svg" alt="Орнамент"> -->
+        </div> 
+    </section>
+    <section class="breadcrumbs">
+        <div class="container breadcrumbs__container">
+            <div class="breadcrumbs__content">
+                <a href="" class="breadcrumbs__link">
+                    Главная
+                </a>
+                <svg class="icon-svg breadcrumbs__arrow">
+                    <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                </svg>
+                <span class="breadcrumbs__link breadcrumbs__link--static">
+                    Помочь детям
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="page-help-children">
+        <div class="container">
+            <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент">
+            <div class="title page-help-children__title">
+                <h2 class="title__text">
+                    Помочь детям
+                </h2>
+            </div>
+            <div class="page-help-children__tabs tabs">
+                <a href="" class="tabs__tab tabs__tab--active">
+                    <div class="tabs__thumb">
+                        <svg class="icon-svg">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-tab-1"></use>
+                        </svg>
+                    </div>
+                    <span class="tabs__tab-text">
+                        Нужна помощь
+                    </span>
+                </a>
+                <a href="" class="tabs__tab">
+                    <div class="tabs__thumb">
+                        <svg class="icon-svg">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-tab-2"></use>
+                        </svg>
+                    </div>
+                    <span class="tabs__tab-text">
+                        Мы помогли
+                    </span>
+                </a>
+                <a href="" class="tabs__tab">
+                    <div class="tabs__thumb">
+                        <svg class="icon-svg">
+                            <use xlink:href="./img/sprites/sprite.svg#icon-tab-3"></use>
+                        </svg>
+                    </div>
+                    <span class="tabs__tab-text">
+                        Мы помним
+                    </span>
+                </a>
+            </div>
+            <div class="page-help-children__articles">
+                @@include("../blocks/modules/article-children/article-children.html")
+                @@include("../blocks/modules/article-children/article-children.html")
+                @@include("../blocks/modules/article-children/article-children.html")
+                @@include("../blocks/modules/article-children/article-children.html")
+                @@include("../blocks/modules/article-children/article-children.html")
+                @@include("../blocks/modules/article-children/article-children.html")
+                @@include("../blocks/modules/article-children/article-children.html")
+                @@include("../blocks/modules/article-children/article-children.html")
+                @@include("../blocks/modules/article-children/article-children.html")
+                @@include("../blocks/modules/article-children/article-children.html")
+                @@include("../blocks/modules/article-children/article-children.html")
+                @@include("../blocks/modules/article-children/article-children.html")
+                <div class="article-children article-children--clear"></div>
+                <div class="article-children article-children--clear"></div>
+                <div class="article-children article-children--clear"></div>
+            </div>
+            <a href="" class="btn btn--orange page-help-children__btn">
+                Стать волонтером
+            </a>
+        </div>
+    </section>
+    @@include("../blocks/modules/sms/sms.html")
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

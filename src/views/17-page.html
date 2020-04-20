@@ -1,20 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>17. Программы</title>
-        @@include("../blocks/modules/head/head.html")
-    </head>
-    <body class="body">
-        @@include("../blocks/modules/header/header.html")
-        <section class="decor">
-            <div class="container">
-                <!-- <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент"> -->
-                <!-- <img class="decor decor--right" src="img/page-decor--right.svg" alt="Орнамент"> -->
-            </div> 
-        </section>
-
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="js/vendor.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+<head>
+    <title>17. Программы</title>
+    @@include("../blocks/modules/head/head.html")
+</head>
+<body class="body">
+    @@include("../blocks/modules/header/header.html")
+    <section class="decor">
+        <div class="container">
+            <!-- <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент"> -->
+            <!-- <img class="decor decor--right" src="img/page-decor--right.svg" alt="Орнамент"> -->
+        </div> 
+    </section>
+    <section class="breadcrumbs">
+        <div class="container breadcrumbs__container">
+            <div class="breadcrumbs__content">
+                <a href="/" class="breadcrumbs__link">
+                    Главная
+                </a>
+                <svg class="icon-svg breadcrumbs__arrow">
+                    <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                </svg>
+                <span class="breadcrumbs__link breadcrumbs__link--static">
+                    Программы и проекты
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="programs">
+        <div class="container">
+            <div class="title friends__title">
+                <h2 class="title__text">
+                    Программы благотворительного центра “Верю в чудо”
+                </h2>
+            </div>
+            <div class="programs__articles">
+                @@include("../blocks/modules/article-program/article-program.html")
+                @@include("../blocks/modules/article-program/article-program.html")
+                @@include("../blocks/modules/article-program/article-program.html")
+                @@include("../blocks/modules/article-program/article-program.html")
+                @@include("../blocks/modules/article-program/article-program.html")
+                @@include("../blocks/modules/article-program/article-program.html")
+            </div>
+        </div>
+    </section>
+    <section class="programs">
+        <div class="container">
+            <div class="title friends__title">
+                <h2 class="title__text">
+                    Проекты
+                </h2>
+            </div>
+            <div class="programs__articles">
+                <a href="" class="article-project">
+                    <img src="http://placehold.it/900x600" alt="" class="article-project__img">
+                </a>
+                <a href="" class="article-project">
+                    <img src="http://placehold.it/600x900" alt="" class="article-project__img">
+                </a>
+                <a href="" class="article-project">
+                    <img src="http://placehold.it/600x600" alt="" class="article-project__img">
+                </a>
+                <a href="" class="article-project">
+                    <img src="http://placehold.it/600x900" alt="" class="article-project__img">
+                </a>
+                <a href="" class="article-project">
+                    <img src="http://placehold.it/900x600" alt="" class="article-project__img">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="programs">
+        <div class="container">
+            <div class="title friends__title">
+                <h2 class="title__text">
+                    Регулярные акции
+                </h2>
+            </div>
+            <div class="programs__articles">
+                <a href="" class="article-project">
+                    <img src="http://placehold.it/900x600" alt="" class="article-project__img">
+                </a>
+            </div>
+        </div>
+    </section>
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

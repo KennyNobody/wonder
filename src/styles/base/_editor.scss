@@ -1,48 +1,82 @@
-// .text {
-//     a {
-//         text-decoration: underline;
-//         &:hover {
-//             text-decoration: none;
-//         }
-//     }
-//     p {
-//         margin-bottom: 1em;
-//     }
-//     b, strong {
-//         font-weight: bold;
-//     }
-//     i, em {
-//         font-style: italic;
-//     }
-//     h1, h2, h3, h4, h5, h6 {
-//         font-weight: bold;
-//         margin-bottom: 1em;
-//     }
-//     h1 {
-//         font-size: 30px;
-//         line-height: 38px;
-//         text-transform: uppercase;
-//     }
-//     h2 {
-//         font-size: 26px;
-//     }
-//     h3 {
-//         font-size: 24px;
-//     }
-//     h4 {
-//         font-size: 22px;
-//     }
-//     h5 {
-//         font-size: 20px;
-//     }
-//     ul {
-//         list-style-type: disc;
-//         padding-left: 18px;
-//         margin-bottom: 1em;
-//     }
-//     ol {
-//         list-style-type: decimal;
-//         padding-left: 18px;
-//         margin-bottom: 1em;
-//     }
-// }
+.text {
+	max-width: 100%;
+	width: 775px;
+	a {
+		text-decoration: none;
+		color: $blue;
+		font-weight: bold;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	figure {
+		margin-bottom: 1rem;
+		font-size: rem(14px);
+	}
+	strong, b {
+		font-weight: bold;
+	}
+	p {
+		margin-bottom: 1em;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
+	i, em {
+		font-style: italic;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+		padding-bottom: 1em;
+		padding-top: 1em;
+	}
+	h1 {
+		font-weight: 800;
+		font-size: rem(34px);
+		line-height: rem(44px);
+	}
+	h2 {
+		font-weight: 800;
+		font-size: rem(26px);
+		line-height: rem(30px);
+	}
+	h3 {
+		font-size: rem(24px);
+	}
+	h4 {
+		font-size: rem(22px);
+	}
+	h5 {
+		font-size: rem(20px);
+	}
+	h6 {
+		font-size: rem(18px);
+	}
+    ul {
+        list-style-type: disc;
+        padding-left: 18px;
+        margin-bottom: 1em;
+        color: #C9E0EC;
+        span {
+        	color: $dark;
+        }
+        li {
+        	margin-bottom: 1em;
+        }
+    }
+    ol {
+        list-style-type: decimal;
+        padding-left: 18px;
+        margin-bottom: 1em;
+        color: $orange;
+        font-weight: bold;
+        span {
+        	color: $dark;
+        	font-weight: normal;
+        }
+        li {
+        	margin-bottom: 1em;
+        }
+    }
+}

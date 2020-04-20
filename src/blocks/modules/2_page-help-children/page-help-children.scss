@@ -1,0 +1,19 @@
+.page-help-children {
+	padding-bottom: rem(100px);
+	&__title {
+		margin-bottom: rem(40px);
+		text-align: center;
+	}
+	&__articles {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__btn {
+		width: rem(252px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+// 46-32

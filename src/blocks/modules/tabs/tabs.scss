@@ -1,0 +1,33 @@
+.tabs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: rem(35px);
+	&__thumb {
+		svg {
+			width: 46px;
+			height: 32px;
+			margin-right: rem(12px);
+			fill: #557383;
+		}
+	}
+	&__tab {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		margin-right: rem(28px);
+		color:  #557383;
+		&:hover {
+			color: $blue;
+			svg {
+				fill: $blue;
+			}
+		}
+		&--active {
+			color: $blue;
+			svg {
+				fill: $blue;
+			}
+		}
+	}
+}

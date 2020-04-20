@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>20. Партнеры</title>
-        @@include("../blocks/modules/head/head.html")
-    </head>
-    <body class="body">
-        @@include("../blocks/modules/header/header.html")
-        <section class="decor">
-            <div class="container">
-                <!-- <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент"> -->
-                <!-- <img class="decor decor--right" src="img/page-decor--right.svg" alt="Орнамент"> -->
-            </div> 
-        </section>
-
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="js/vendor.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+<head>
+    <title>20. Партнеры</title>
+    @@include("../blocks/modules/head/head.html")
+</head>
+<body class="body">
+    @@include("../blocks/modules/header/header.html")
+    <section class="decor">
+        <div class="container">
+            <!-- <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент"> -->
+            <!-- <img class="decor decor--right" src="img/page-decor--right.svg" alt="Орнамент"> -->
+        </div> 
+    </section>
+    <section class="breadcrumbs">
+        <div class="container breadcrumbs__container">
+            <div class="breadcrumbs__content">
+                <a href="/" class="breadcrumbs__link">
+                    Главная
+                </a>
+                <svg class="icon-svg breadcrumbs__arrow">
+                    <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                </svg>
+                <span class="breadcrumbs__link breadcrumbs__link--static">
+                    Партнеры
+                </span>
+            </div>
+        </div>
+    </section>
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

@@ -13,9 +13,17 @@
 @import "modules/footer/footer";
 
 @import "modules/article-news/article-news";
+@import "modules/article-program/article-program";
+@import "modules/article-children/article-children";
 @import "modules/article-reviews/article-reviews";
 @import "modules/socials/socials";
 @import "modules/menu/menu";
+@import "modules/tabs/tabs";
 @import "modules/pagination/pagination";
 
+@import "modules/0_page-single/page-single";
+@import "modules/2_page-help-children/page-help-children";
 @import "modules/11_page-news/page-news";
+@import "modules/15_page-library/page-library";
+@import "modules/17_page-programs/page-programs";
+@import "modules/23_page-reviews/page-reviews";
