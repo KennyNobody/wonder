@@ -6,4 +6,37 @@
 	&__content {
 		margin-bottom: 5rem;
 	}
+	&__columns {
+		display: flex;
+	}
+	&__column {
+		width: 50%;
+		float: none;
+		height: fit-content;
+	}
+	&__column + &__column {
+		margin-left: 20px;
+	}
+	&__tabs {
+		margin-bottom: 2.5rem;
+	}
+	&__tab {
+		text-decoration: none;
+		color: $blue;
+		font-weight: bold;
+		font-size: rem(18px);
+		display: inline-block;
+		margin-right: rem(32px);
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+	&__preview {
+
+	}
+	&__preview-thumb {
+		display: block;
+		width: 100%;
+		margin-bottom: rem(45px);
+	}
 }

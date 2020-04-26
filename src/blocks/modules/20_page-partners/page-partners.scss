@@ -1,0 +1,39 @@
+.page-partners {
+	margin-bottom: 5rem;
+	&__title {
+		margin-bottom: 2.5rem;
+	}
+	&__articles {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+.partner {
+	text-align: center;
+	text-decoration: none;
+	width: calc(33% - 20px);
+	margin-bottom: rem(35px);
+	display: block;
+	&--clear {
+		height: 0px;
+		overflow: hidden;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+	&__thumb {
+		margin-bottom: rem(15px);
+		height: 210px;
+		img {
+			object-fit: contain;
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	&__title {
+		color: $dark;
+	}
+}

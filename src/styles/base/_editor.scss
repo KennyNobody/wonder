@@ -1,6 +1,6 @@
 .text {
-	max-width: 100%;
-	width: 775px;
+	// max-width: 100%;
+	// width: 775px;
 	a {
 		text-decoration: none;
 		color: $blue;
@@ -35,6 +35,7 @@
 		font-weight: 800;
 		font-size: rem(34px);
 		line-height: rem(44px);
+		color: $blue;
 	}
 	h2 {
 		font-weight: 800;
@@ -79,4 +80,34 @@
         	margin-bottom: 1em;
         }
     }
+    blockquote {
+    	border-left: 4px solid #C9E0EC;
+    	margin-left: rem(30px);
+    	padding-left: rem(14px);
+    	padding-right: rem(14px);
+    	margin-bottom: 1.5em;
+    }
+}
+
+.accent {
+	background-color: #F0F6FA;
+	float: right;
+	width: calc(50% - 10px);
+	display: block;
+	padding: rem(20px) rem(35px) rem(35px) rem(35px);
+	margin-left: 20px;
+	margin-bottom: 20px;
+	a {
+		display: inline-block;
+		min-width: 35%;
+		margin-bottom: 1em;
+		font-weight: normal;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	ul {
+		color: $orange;
+	}
 }

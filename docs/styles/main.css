@@ -3095,11 +3095,6 @@ button {
   opacity: 0.7;
 }
 
-.text {
-  max-width: 100%;
-  width: 775px;
-}
-
 .text a {
   text-decoration: none;
   color: #008AC4;
@@ -3149,6 +3144,7 @@ button {
   font-weight: 800;
   font-size: 2.125rem;
   line-height: 2.75rem;
+  color: #008AC4;
 }
 
 .text h2 {
@@ -3203,6 +3199,40 @@ button {
 
 .text ol li {
   margin-bottom: 1em;
+}
+
+.text blockquote {
+  border-left: 4px solid #C9E0EC;
+  margin-left: 1.875rem;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  margin-bottom: 1.5em;
+}
+
+.accent {
+  background-color: #F0F6FA;
+  float: right;
+  width: calc(50% - 10px);
+  display: block;
+  padding: 1.25rem 2.1875rem 2.1875rem 2.1875rem;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.accent a {
+  display: inline-block;
+  min-width: 35%;
+  margin-bottom: 1em;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.accent a:hover {
+  text-decoration: none;
+}
+
+.accent ul {
+  color: #FA873D;
 }
 
 .container {
@@ -4601,6 +4631,43 @@ button {
   margin-bottom: 5rem;
 }
 
+.single-page__columns {
+  display: flex;
+}
+
+.single-page__column {
+  width: 50%;
+  float: none;
+  height: fit-content;
+}
+
+.single-page__column + .single-page__column {
+  margin-left: 20px;
+}
+
+.single-page__tabs {
+  margin-bottom: 2.5rem;
+}
+
+.single-page__tab {
+  text-decoration: none;
+  color: #008AC4;
+  font-weight: bold;
+  font-size: 1.125rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.single-page__tab:last-child {
+  margin-right: 0px;
+}
+
+.single-page__preview-thumb {
+  display: block;
+  width: 100%;
+  margin-bottom: 2.8125rem;
+}
+
 .page-help-children {
   padding-bottom: 6.25rem;
 }
@@ -4664,6 +4731,53 @@ button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.page-partners {
+  margin-bottom: 5rem;
+}
+
+.page-partners__title {
+  margin-bottom: 2.5rem;
+}
+
+.page-partners__articles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.partner {
+  text-align: center;
+  text-decoration: none;
+  width: calc(33% - 20px);
+  margin-bottom: 2.1875rem;
+  display: block;
+}
+
+.partner--clear {
+  height: 0px;
+  overflow: hidden;
+}
+
+.partner:hover {
+  opacity: 0.7;
+}
+
+.partner__thumb {
+  margin-bottom: 0.9375rem;
+  height: 210px;
+}
+
+.partner__thumb img {
+  object-fit: contain;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.partner__title {
+  color: #133A4B;
 }
 
 .page-reviews {
