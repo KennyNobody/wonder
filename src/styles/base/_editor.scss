@@ -54,39 +54,44 @@
 	h6 {
 		font-size: rem(18px);
 	}
-    ul {
-        list-style-type: disc;
-        padding-left: 18px;
-        margin-bottom: 1em;
-        color: #C9E0EC;
-        span {
-        	color: $dark;
-        }
-        li {
-        	margin-bottom: 1em;
-        }
-    }
-    ol {
-        list-style-type: decimal;
-        padding-left: 18px;
-        margin-bottom: 1em;
-        color: $orange;
-        font-weight: bold;
-        span {
-        	color: $dark;
-        	font-weight: normal;
-        }
-        li {
-        	margin-bottom: 1em;
-        }
-    }
-    blockquote {
-    	border-left: 4px solid #C9E0EC;
-    	margin-left: rem(30px);
-    	padding-left: rem(14px);
-    	padding-right: rem(14px);
-    	margin-bottom: 1.5em;
-    }
+	ul {
+		list-style-type: disc;
+		padding-left: 18px;
+		margin-bottom: 1em;
+		color: #C9E0EC;
+		span {
+			color: $dark;
+		}
+		li {
+			margin-bottom: 1em;
+		}
+	}
+	ol {
+		list-style-type: decimal;
+		padding-left: 18px;
+		margin-bottom: 1em;
+		color: $orange;
+		font-weight: bold;
+		span {
+			color: $dark;
+			font-weight: normal;
+		}
+		li {
+			margin-bottom: 1em;
+		}
+	}
+	blockquote {
+		border-left: 4px solid #C9E0EC;
+		margin-left: rem(30px);
+		padding-left: rem(14px);
+		padding-right: rem(14px);
+		margin-bottom: 1.5em;
+	}
+	iframe {
+		width: 100% !important;
+		height: 400px !important;
+		margin-bottom: 1rem;
+	}
 }
 
 .accent {
@@ -109,5 +114,22 @@
 	}
 	ul {
 		color: $orange;
+	}
+}
+
+.p__accent {
+	background-color: #FFE1D2;
+	font-size: rem(18px);
+	padding: rem(28px) rem(15px) rem(28px) rem(88px);
+	background-image: url('../img/accent-icon.svg');
+	background-repeat: no-repeat;
+	background-position: 13px center;
+}
+
+.info-accent {
+	padding: rem(22px) rem(48px);
+	background: #F0F6FA;
+	h2 {
+		color: $blue;
 	}
 }

@@ -364,6 +364,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/blocks/modules/ui/ui.js":
+/*!*************************************!*\
+  !*** ./src/blocks/modules/ui/ui.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function () {
+  var drops = document.querySelectorAll('.drop-card');
+
+  if (drops) {
+    for (var i = 0; i < drops.length; i++) {
+      console.log(drops[i]);
+    }
+  }
+})();
+
+/***/ }),
+
 /***/ "./src/js/import/modules.js":
 /*!**********************************!*\
   !*** ./src/js/import/modules.js ***!
@@ -381,10 +400,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_friends_friends__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/friends/friends */ "./src/blocks/modules/friends/friends.js");
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/front-news/front-news */ "./src/blocks/modules/front-news/front-news.js");
-/* harmony import */ var _modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/subscription/subscription */ "./src/blocks/modules/subscription/subscription.js");
-/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_ui_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/ui/ui */ "./src/blocks/modules/ui/ui.js");
+/* harmony import */ var _modules_ui_ui__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_ui_ui__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/front-news/front-news */ "./src/blocks/modules/front-news/front-news.js");
+/* harmony import */ var _modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/subscription/subscription */ "./src/blocks/modules/subscription/subscription.js");
+/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
