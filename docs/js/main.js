@@ -204,6 +204,32 @@
 
 /***/ }),
 
+/***/ "./src/blocks/modules/form/form.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/modules/form/form.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function agreebecome() {
+  var button = document.querySelector('.become__form .form-submit');
+  var checkbox = document.querySelector('.become__check input');
+
+  if (button && checkbox) {
+    checkbox.addEventListener('change', toggleBtn);
+  }
+
+  function toggleBtn() {
+    if (checkbox.checked) {
+      button.classList.remove('form-submit--disabled');
+    } else {
+      button.classList.add('form-submit--disabled');
+    }
+  }
+})();
+
+/***/ }),
+
 /***/ "./src/blocks/modules/friends/friends.js":
 /*!***********************************************!*\
   !*** ./src/blocks/modules/friends/friends.js ***!
@@ -455,6 +481,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/subscription/subscription */ "./src/blocks/modules/subscription/subscription.js");
 /* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/form/form */ "./src/blocks/modules/form/form.js");
+/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_form_form__WEBPACK_IMPORTED_MODULE_10__);
+
 
 
 

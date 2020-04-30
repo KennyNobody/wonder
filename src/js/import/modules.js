@@ -9,3 +9,4 @@ import "%modules%/footer/footer";
 import "%modules%/ui/ui";
 import "%modules%/front-news/front-news";
 import "%modules%/subscription/subscription";
+import "%modules%/form/form";

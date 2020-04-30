@@ -1,5 +1,5 @@
-.subscription {
-	background-color: $orange;
+.become {
+	background-color: $blue;
 	color: $light;
 	padding-top: 45px;
 	padding-bottom: 45px;
@@ -7,14 +7,12 @@
 		margin-bottom: 45px;
 	}
 	&__form {
-		width: 556px;
-		max-width: 100%;
-		margin-left: auto;
-		margin-right: auto;
 		
 	}
 	&__inputs {
 		display: flex;
+		flex-wrap: wrap;
+		align-items:center;
 		@include r(680) {
 			display: block;
 		}
@@ -29,6 +27,7 @@
 			height: 42px;
 			min-width: 0px;
 			border: none;
+			width: calc(33% - 20px);
 			color: $light;
 			padding-left: 19px;
 			padding-right: 19px;
@@ -59,8 +58,8 @@
 			font-weight: 500;
 			font-size: 16px;
 			line-height: 24px;
-			margin-bottom: 13px;
 			color: $dark;
+			margin-right: 42px;
 			&--disabled {
 				opacity: 0.5;
 				pointer-events: none;
@@ -80,7 +79,7 @@
 		input {
 			display: none;
 		}
-		input:checked + .subscription__icon{
+		input:checked + .become__icon{
 			.icon-svg {
 				opacity: 1;
 			}

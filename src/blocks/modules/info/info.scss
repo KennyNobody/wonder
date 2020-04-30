@@ -6,6 +6,9 @@
 	font-weight: 500;
 	font-size: rem(20px);
 	text-align: center;
+	&--contacts {
+		padding-top: rem(235px);
+	}
 	@include r(1080) {
 		padding-top: rem(35px);
 		padding-bottom: rem(35px);
@@ -34,6 +37,9 @@
 			width: 40px;
 			margin-left: 10px;
 			margin-right: 10px;
+		}
+		&:hover {
+			opacity: 0.7;
 		}
 	}
 	&__btn {
