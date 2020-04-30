@@ -4,6 +4,9 @@
     &--light {
         color: $light;
     }
+    &--blue {
+        color: $blue;
+    }
     &__text {
         margin-bottom: rem(5px);
         font-weight: 800;
@@ -94,7 +97,7 @@
     &--open {
         .drop-card__header {
             background-image: url('../img/minus-icon.svg');
-            background-position: left 24px;
+            background-position: left 25px;
         }
         .drop-card__main {
             max-height: 10000px;

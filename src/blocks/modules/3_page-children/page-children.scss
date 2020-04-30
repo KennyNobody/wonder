@@ -1,0 +1,112 @@
+.children-page {
+	margin-bottom: rem(95px);
+	&__title {
+		margin-bottom: rem(40px);
+		text-align: left;
+	}
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		&--left {
+			width: calc(100% / 12 * 5 - 10px);
+		}
+		&--right {
+			width: calc(100% / 12 * 7 - 10px);
+		}
+	}
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin-bottom: rem(40px);
+		&:after {
+			content: "";
+			position: absolute;
+			height: 1px;
+			background-color: #C9E0EC;
+			width: 100%;
+			display: block;
+			top: calc(100% - 2px);
+			z-index: -1;
+		}
+	}
+	&__nav-link {
+		font-size: rem(18px);
+		color: $blue;
+		padding-bottom: 12px;
+		text-decoration: none;
+		&:hover {
+			opacity: 0.7;
+		}
+		&--active {
+			border-bottom: 3px solid $blue;
+			pointer-events: none;
+		}
+	}
+	&__tabs {
+
+	}
+	&__tab {
+		display: none;
+		&--active {
+			display: block;
+		}
+	}
+	&__thumb {
+		display: block;
+		position: relative;
+		border: 1px solid $green;
+		margin-bottom: rem(30px);
+		width: 100%;
+		height: auto;
+		@include r(700) {
+			display: none;
+		}
+		img {
+			display: block;
+			z-index: 1;
+			position: relative;
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+	}
+	&__bg {
+		opacity: 0.2;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		height: 100%;
+		width: 100%;
+		z-index: 0;
+	}
+	&__diagnose {
+		font-size: rem(18px);
+		margin-bottom: 1.5rem;
+		b {
+			font-weight: bold;
+		}
+	}
+	&__money {
+		margin-bottom: rem(34px);
+		font-size: rem(18px);
+		b {
+			color: $blue;
+			font-weight: 800;
+			font-size: 34px;
+		}
+	}
+	&__leica {
+		background-color: red;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 410px;
+		margin-bottom: 2rem;
+	}
+	&__thank {
+		font-size: rem(18px);
+	}
+}
