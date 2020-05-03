@@ -1,0 +1,43 @@
+.team-page {
+	margin-bottom: 5rem;
+	&__title {
+		text-align: left;
+		margin-bottom: rem(40px);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__btn {
+		text-align: center;
+		width: 100%;
+		max-width: 340px;
+	}
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		width: calc(100% / 3 - 20px);
+		margin-bottom: 2rem;
+		ul {
+			color: $dark;
+		}
+	}
+}
+
+.accent-section {
+	padding-top: rem(60px);
+	font-size: rem(20px);
+	padding-bottom: rem(90px);
+	background: #F0F6FA;
+	margin-bottom: rem(48px);
+	p {
+		margin-bottom: 1rem;
+		&:last-child {
+			margin-bottom: 0px;
+			&:after {
+				clear: both;
+			}
+		}
+	}
+}

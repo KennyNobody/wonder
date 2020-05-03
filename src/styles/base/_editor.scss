@@ -102,6 +102,14 @@
 	padding: rem(20px) rem(35px) rem(35px) rem(35px);
 	margin-left: 20px;
 	margin-bottom: 20px;
+	&--block {
+		float: none;
+		width: 100%;
+		margin-left: 0px;
+	}
+	h2 {
+		color: $blue;
+	}
 	a {
 		display: inline-block;
 		min-width: 35%;

@@ -8,14 +8,27 @@
 	}
 	&__columns {
 		display: flex;
+		margin-bottom: 2rem;
+		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 	&__column {
-		width: 50%;
+		width: calc(50% - 10px);
 		float: none;
 		height: fit-content;
 	}
-	&__column + &__column {
-		margin-left: 20px;
+	// &__column + &__column {
+	// 	margin-left: 20px;
+	// }
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 2rem;
+	}
+	&__card {
+		text-align: left;
+		margin-left: 0px;
 	}
 	&__tabs {
 		margin-bottom: 2.5rem;
@@ -41,5 +54,18 @@
 		display: block;
 		width: 100%;
 		margin-bottom: rem(45px);
+	}
+	&__icon-title {
+		display: flex;
+		align-items: center;
+		svg {
+			display: block;
+			height: 33px;
+			width: 33px;
+			margin-right: 10px;
+		}
+		span {
+
+		}
 	}
 }
