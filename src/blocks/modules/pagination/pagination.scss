@@ -35,28 +35,6 @@
 	line-height: rem(22px);
 	color: $light;
 	pointer-events: none;
-	// &:before {
-	// 	bottom: 100%;
-	// 	position: absolute;
-	// 	left: 0px;
-	// 	right: 0px;
-	// 	content: "";
-	// 	background-color: $blue;
-	// 	border-top-left-radius: 100px;
-	// 	border-top-right-radius: 100px;
-	// 	height: 50%;
-	// }
-	// &:after {
-	// 	top: 100%;
-	// 	position: absolute;
-	// 	left: 0px;
-	// 	right: 0px;
-	// 	content: "";
-	// 	background-color: $blue;
-	// 	border-bottom-left-radius: 100px;
-	// 	border-bottom-right-radius: 100px;
-	// 	height: 50%;
-	// }
 }
 
 .prev {

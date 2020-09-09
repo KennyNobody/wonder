@@ -6,51 +6,53 @@
 </head>
 <body class="body">
     @@include("../blocks/modules/header/header.html")
-    <section class="decor">
-        <div class="container">
-            <!-- <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент"> -->
-            <!-- <img class="decor decor--right" src="img/page-decor--right.svg" alt="Орнамент"> -->
-        </div> 
-    </section>
-    <section class="breadcrumbs">
-        <div class="container breadcrumbs__container">
-            <div class="breadcrumbs__content">
-                <a href="/" class="breadcrumbs__link">
-                    Главная
-                </a>
-                <svg class="icon-svg breadcrumbs__arrow">
-                    <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-                </svg>
-                <span class="breadcrumbs__link breadcrumbs__link--static">
-                    Отзывы
-                </span>
+    <main class="main">
+        <section class="decor">
+            <div class="container">
+                <!-- <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент"> -->
+                <!-- <img class="decor decor--right" src="img/page-decor--right.svg" alt="Орнамент"> -->
+            </div> 
+        </section>
+        <section class="breadcrumbs">
+            <div class="container breadcrumbs__container">
+                <div class="breadcrumbs__content">
+                    <a href="/" class="breadcrumbs__link">
+                        Главная
+                    </a>
+                    <svg class="icon-svg breadcrumbs__arrow">
+                        <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                    </svg>
+                    <span class="breadcrumbs__link breadcrumbs__link--static">
+                        Отзывы
+                    </span>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="page-reviews">
-        <div class="container">
-            <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент">
-            <div class="title page-reviews__title">
-                <h2 class="title__text">
-                    Отзывы
-                </h2>
+        </section>
+        <section class="page-reviews">
+            <div class="container">
+                <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент">
+                <div class="title page-reviews__title">
+                    <h2 class="title__text">
+                        Отзывы
+                    </h2>
+                </div>
+                <div class="page-reviews__articles">
+                    @@include("../blocks/modules/article-reviews/article-reviews.html")
+                    @@include("../blocks/modules/article-reviews/article-reviews.html")
+                    @@include("../blocks/modules/article-reviews/article-reviews.html")
+                    @@include("../blocks/modules/article-reviews/article-reviews.html")
+                    @@include("../blocks/modules/article-reviews/article-reviews.html")
+                    @@include("../blocks/modules/article-reviews/article-reviews.html")
+                    @@include("../blocks/modules/article-reviews/article-reviews.html")
+                    @@include("../blocks/modules/article-reviews/article-reviews.html")
+                    @@include("../blocks/modules/article-reviews/article-reviews.html")
+                    @@include("../blocks/modules/article-reviews/article-reviews.html")
+                </div>
+                @@include("../blocks/modules/pagination/pagination.html")
             </div>
-            <div class="page-reviews__articles">
-                @@include("../blocks/modules/article-reviews/article-reviews.html")
-                @@include("../blocks/modules/article-reviews/article-reviews.html")
-                @@include("../blocks/modules/article-reviews/article-reviews.html")
-                @@include("../blocks/modules/article-reviews/article-reviews.html")
-                @@include("../blocks/modules/article-reviews/article-reviews.html")
-                @@include("../blocks/modules/article-reviews/article-reviews.html")
-                @@include("../blocks/modules/article-reviews/article-reviews.html")
-                @@include("../blocks/modules/article-reviews/article-reviews.html")
-                @@include("../blocks/modules/article-reviews/article-reviews.html")
-                @@include("../blocks/modules/article-reviews/article-reviews.html")
-            </div>
-            @@include("../blocks/modules/pagination/pagination.html")
-        </div>
-    </section>
-    @@include("../blocks/modules/sms/sms.html")
+        </section>
+        @@include("../blocks/modules/sms/sms.html")
+    </main>
     @@include("../blocks/modules/footer/footer.html")
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>

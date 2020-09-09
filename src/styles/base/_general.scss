@@ -2,22 +2,6 @@ svg, a {
     transition: 0.3s all;
 }
 
-.body {
-	color: $dark;
-	font-family: $main-font;
-	font-size: 16px;
-    overflow-x: hidden;
-    line-height: 1.45;
-    background-color: $light;
-    border-top: 4px solid $blue;
-    @include r(1080) {
-
-    }
-    @include r(440) {
-
-    }
-}
-
 .icon-svg {
     transition: 0.3s all;
     height: 1rem;

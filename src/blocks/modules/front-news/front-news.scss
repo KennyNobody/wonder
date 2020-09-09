@@ -2,16 +2,13 @@
 	padding-top: 50px;
 	padding-bottom: 80px;
 	&__title {
-		margin-bottom: rem(50px);
+		margin-bottom: 50px;
 	}
 	&__articles {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: rem(25px);
+		margin-bottom: 25px;
 		flex-wrap: wrap;
-		// @include r(700) {
-		// 	margin-bottom: rem(25px);
-		// }
 	}
 	&__btn {
 		margin-left: auto;

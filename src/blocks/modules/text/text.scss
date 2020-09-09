@@ -1,0 +1,141 @@
+.text {
+	a {
+		text-decoration: none;
+		color: $blue;
+		font-weight: bold;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	figure {
+		margin-bottom: 1rem;
+		font-size: rem(14px);
+	}
+	strong, b {
+		font-weight: bold;
+	}
+	p {
+		margin-bottom: 1em;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
+	i, em {
+		font-style: italic;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+		padding-bottom: 1em;
+		padding-top: 1em;
+	}
+	h1 {
+		font-weight: 800;
+		font-size: rem(34px);
+		line-height: rem(44px);
+		color: $blue;
+	}
+	h2 {
+		font-weight: 800;
+		font-size: rem(26px);
+		line-height: rem(30px);
+	}
+	h3 {
+		font-size: rem(24px);
+	}
+	h4 {
+		font-size: rem(22px);
+	}
+	h5 {
+		font-size: rem(20px);
+	}
+	h6 {
+		font-size: rem(18px);
+	}
+	ul {
+		list-style-type: disc;
+		padding-left: 18px;
+		margin-bottom: 1em;
+		color: #C9E0EC;
+		span {
+			color: $dark;
+		}
+		li {
+			margin-bottom: 1em;
+		}
+	}
+	ol {
+		list-style-type: decimal;
+		padding-left: 18px;
+		margin-bottom: 1em;
+		color: $orange;
+		font-weight: bold;
+		span {
+			color: $dark;
+			font-weight: normal;
+		}
+		li {
+			margin-bottom: 1em;
+		}
+	}
+	blockquote {
+		border-left: 4px solid #C9E0EC;
+		margin-left: rem(30px);
+		padding-left: rem(14px);
+		padding-right: rem(14px);
+		margin-bottom: 1.5em;
+	}
+	iframe {
+		width: 100% !important;
+		height: 400px !important;
+		margin-bottom: 1rem;
+	}
+}
+
+.accent {
+	background-color: #F0F6FA;
+	float: right;
+	width: calc(50% - 10px);
+	display: block;
+	padding: rem(20px) rem(35px) rem(35px) rem(35px);
+	margin-left: 20px;
+	margin-bottom: 20px;
+	&--block {
+		float: none;
+		width: 100%;
+		margin-left: 0px;
+	}
+	h2 {
+		color: $blue;
+	}
+	a {
+		display: inline-block;
+		min-width: 35%;
+		margin-bottom: 1em;
+		font-weight: normal;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	ul {
+		color: $orange;
+	}
+}
+
+.p__accent {
+	background-color: #FFE1D2;
+	font-size: rem(18px);
+	padding: rem(28px) rem(15px) rem(28px) rem(88px);
+	background-image: url('../img/accent-icon.svg');
+	background-repeat: no-repeat;
+	background-position: 13px center;
+}
+
+.info-accent {
+	padding: rem(22px) rem(48px);
+	background: #F0F6FA;
+	h2 {
+		color: $blue;
+	}
+}
