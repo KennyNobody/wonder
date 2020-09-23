@@ -1,14 +1,12 @@
 .friends {
-	padding-top: 70px;
-	padding-bottom: 95px;
 	&__decor {
 		&--right {
 			bottom: 10px;
 		}
 	}
-	&__title {
-		margin-bottom: 70px;
-	}
+	// &__title {
+	// 	margin-bottom: 70px;
+	// }
 	&__content {
 		position: relative;
 		padding-left: 90px;

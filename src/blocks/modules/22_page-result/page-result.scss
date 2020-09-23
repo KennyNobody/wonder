@@ -29,12 +29,7 @@
 	}
 	&__result {
 		text-align: center;
-		width: 25%;
 		margin-bottom: rem(20px);
-		&--clear {
-			height: 0px;
-			overflow: hidden;
-		}
 		a {
 			color: #557383;
 			&:hover {

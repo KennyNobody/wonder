@@ -9,7 +9,7 @@ var friendSlider = new Swiper ('.friends__slider', {
 	navigation: {
 		nextEl: '.friends__slider-btn--next',
 		prevEl: '.friends__slider-btn--prev',
-		disabledClass: 'friend__btn--disabled'
+		disabledClass: 'friend__slider-btn--disabled'
 	},
 	breakpoints: {
 		0: {

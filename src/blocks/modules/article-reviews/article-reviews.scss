@@ -1,31 +1,10 @@
 .review {
 	display: flex;
-	width: calc(50% - 10px);
 	margin-bottom: 60px;
 	@include r(920) {
-		width: 100%;
 		margin-bottom: rem(25px);
 	}
-	&:nth-child(4n+3) {
-		.review__bg {
-			background-color: $orange;
-		}
-	}
-	&:nth-child(4n+2) {
-		.review__bg {
-			background-color: $orange;
-		}
-	}
-	&:nth-child(4n+1) {
-		.review__bg {
-			background-color: $blue;
-		}
-	}
-	&:nth-child(4n) {
-		.review__bg {
-			background-color: $blue;
-		}
-	}
+	
 	&__thumb {
 		display: block;
 		position: relative;

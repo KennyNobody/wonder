@@ -1,25 +1,10 @@
 .article-children {
-	width: calc(25% - 10px);
 	display: block;
 	margin-bottom: rem(25px);
 	text-decoration: none;
 	color: $dark;
-	&--clear {
-		height: 0px;
-		overflow: hidden;
-	}
 	&:hover {
 		opacity: 0.7;
-	}
-	&:nth-child(2n + 1) {
-		.article-children__bg {
-			background-color: $orange;
-		}
-	}
-	&:nth-child(2n) {
-		.article-children__bg {
-			background-color: $blue;
-		}
 	}
 	&__bg {
 		opacity: 0.2;

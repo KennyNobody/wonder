@@ -13,9 +13,9 @@
                 <!-- <img class="decor decor--right" src="img/page-decor--right.svg" alt="Орнамент"> -->
             </div> 
         </section>
-        <section class="breadcrumbs">
-            <div class="container breadcrumbs__container">
-                <div class="breadcrumbs__content">
+        <section class="section section--breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs">
                     <a href="/" class="breadcrumbs__link">
                         Главная
                     </a>
@@ -34,33 +34,80 @@
                 </div>
             </div>
         </section>
-        <section class="page-news">
+        <section class="section section--top section--bottom">
             <div class="container">
-                <div class="title page-news__title">
-                    <h2 class="title__text">
-                        Новости
-                    </h2>
+                <div class="page-news">
+                    <div class="title title--left">
+                        <h2 class="title__text">
+                            Новости
+                        </h2>
+                    </div>
+                    <div class="articles">
+                        <div class="articles__content">
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-news/article-news.html")
+                            </div>
+                            <div class="articles__item articles__item--25 articles__item--clear"></div>
+                            <div class="articles__item articles__item--25 articles__item--clear"></div>
+                            <div class="articles__item articles__item--25 articles__item--clear"></div>
+                        </div>
+                        <div class="articles__toolbar">
+                            @@include("../blocks/modules/pagination/pagination.html")
+                        </div>
+                    </div>                    
                 </div>
-                <div class="page-news__articles">
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    @@include("../blocks/modules/article-news/article-news.html")
-                    <div class="article article--clear"></div>
-                    <div class="article article--clear"></div>
-                </div>
-                @@include("../blocks/modules/pagination/pagination.html")
             </div>
         </section>
-        @@include("../blocks/modules/info/info.html")
+        <section class="section section--accent">
+            <div class="container">
+                @@include("../blocks/modules/info/info.html")
+            </div>
+        </section>
     </main>
     @@include("../blocks/modules/footer/footer.html")
     <script src="js/vendor.js"></script>

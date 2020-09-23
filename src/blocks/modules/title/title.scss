@@ -1,0 +1,31 @@
+.title {
+    color: $orange;
+    margin-bottom: 45px;
+    &--light {
+        color: $light;
+    }
+    &--blue {
+        color: $blue;
+    }
+    &--center {
+        text-align: center;
+    }
+    &--toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        margin-bottom: rem(5px);
+        font-weight: 800;
+        font-size: rem(34px);
+        line-height: rem(36px);
+    }
+    &__discript {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    @include r(1080) {
+
+    }
+}

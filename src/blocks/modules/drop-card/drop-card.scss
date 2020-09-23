@@ -1,0 +1,38 @@
+.drop-card {
+    border-top: 1px solid #C9E0EC;
+    &--open {
+        .drop-card__header {
+            background-image: url('../img/minus-icon.svg');
+            background-position: left 25px;
+        }
+        .drop-card__main {
+            max-height: 10000px;
+        }
+    }
+    &:last-child {
+        border-bottom: 1px solid #C9E0EC;
+    }
+    &__header {
+        padding: rem(16px) 0px rem(16px) rem(42px);
+        cursor: pointer;
+        display: block;
+        text-decoration: none !important;
+        color: $dark !important;
+        background-image: url('../img/plus-icon.svg');
+        background-repeat: no-repeat;
+        background-position: left 18px;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &__content {
+        padding-bottom: rem(20px);
+    }
+    &__main {
+        max-height: 0px;
+        overflow: hidden;
+    }
+    p {
+        margin-bottom: 0px;
+    }
+}

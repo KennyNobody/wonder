@@ -1,0 +1,11 @@
+.discription {
+	font-size: rem(14px);
+	text-align: center;
+	a {
+		color: #EA4238;
+		text-decoration: none;
+		&:hover {
+			color: $light;
+		}
+	}
+}

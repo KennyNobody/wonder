@@ -17,6 +17,9 @@
 		text-decoration: none;
 		margin-right: rem(28px);
 		color:  #557383;
+		&:last-of-type {
+			margin-right: 0px;
+		}
 		&:hover {
 			color: $blue;
 			svg {

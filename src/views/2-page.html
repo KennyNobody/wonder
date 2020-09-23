@@ -13,9 +13,9 @@
                 <!-- <img class="decor decor--right" src="img/page-decor--right.svg" alt="Орнамент"> -->
             </div> 
         </section>
-        <section class="breadcrumbs">
-            <div class="container breadcrumbs__container">
-                <div class="breadcrumbs__content">
+        <section class="section section--breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs">
                     <a href="" class="breadcrumbs__link">
                         Главная
                     </a>
@@ -28,69 +28,115 @@
                 </div>
             </div>
         </section>
-        <section class="page-help-children">
+        <section class="section section--top section--bottom">
             <div class="container">
-                <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент">
-                <div class="title page-help-children__title">
-                    <h2 class="title__text">
-                        Помочь детям
-                    </h2>
-                </div>
-                <div class="page-help-children__tabs tabs">
-                    <a href="" class="tabs__tab tabs__tab--active">
-                        <div class="tabs__thumb">
-                            <svg class="icon-svg">
-                                <use xlink:href="./img/sprites/sprite.svg#icon-tab-1"></use>
-                            </svg>
+                <div class="page-help-children">
+                    <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент">
+                    <div class="title title--center">
+                        <h2 class="title__text">
+                            Помочь детям
+                        </h2>
+                    </div>
+                    <div class="tabs">
+                        <a href="" class="tabs__tab tabs__tab--active">
+                            <div class="tabs__thumb">
+                                <svg class="icon-svg">
+                                    <use xlink:href="./img/sprites/sprite.svg#icon-tab-1"></use>
+                                </svg>
+                            </div>
+                            <span class="tabs__tab-text">
+                                Нужна помощь
+                            </span>
+                        </a>
+                        <a href="" class="tabs__tab">
+                            <div class="tabs__thumb">
+                                <svg class="icon-svg">
+                                    <use xlink:href="./img/sprites/sprite.svg#icon-tab-2"></use>
+                                </svg>
+                            </div>
+                            <span class="tabs__tab-text">
+                                Мы помогли
+                            </span>
+                        </a>
+                        <a href="" class="tabs__tab">
+                            <div class="tabs__thumb">
+                                <svg class="icon-svg">
+                                    <use xlink:href="./img/sprites/sprite.svg#icon-tab-3"></use>
+                                </svg>
+                            </div>
+                            <span class="tabs__tab-text">
+                                Мы помним
+                            </span>
+                        </a>
+                    </div>
+                    <div class="articles">
+                        <div class="articles__content">
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25">
+                                @@include("../blocks/modules/article-children/article-children.html")
+                            </div>
+                            <div class="articles__item articles__item--25 articles__item--clear"></div>
+                            <div class="articles__item articles__item--25 articles__item--clear"></div>
+                            <div class="articles__item articles__item--25 articles__item--clear"></div>
                         </div>
-                        <span class="tabs__tab-text">
-                            Нужна помощь
-                        </span>
-                    </a>
-                    <a href="" class="tabs__tab">
-                        <div class="tabs__thumb">
-                            <svg class="icon-svg">
-                                <use xlink:href="./img/sprites/sprite.svg#icon-tab-2"></use>
-                            </svg>
+                        <div class="articles__toolbar">
+                            <a href="" class="btn btn--orange page-help-children__btn">
+                                Стать волонтером
+                            </a>
                         </div>
-                        <span class="tabs__tab-text">
-                            Мы помогли
-                        </span>
-                    </a>
-                    <a href="" class="tabs__tab">
-                        <div class="tabs__thumb">
-                            <svg class="icon-svg">
-                                <use xlink:href="./img/sprites/sprite.svg#icon-tab-3"></use>
-                            </svg>
-                        </div>
-                        <span class="tabs__tab-text">
-                            Мы помним
-                        </span>
-                    </a>
+                    </div>                    
                 </div>
-                <div class="page-help-children__articles">
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    @@include("../blocks/modules/article-children/article-children.html")
-                    <div class="article-children article-children--clear"></div>
-                    <div class="article-children article-children--clear"></div>
-                    <div class="article-children article-children--clear"></div>
-                </div>
-                <a href="" class="btn btn--orange page-help-children__btn">
-                    Стать волонтером
-                </a>
             </div>
         </section>
-        @@include("../blocks/modules/sms/sms.html")
+        <section class="section section--sms">
+            <div class="container">
+                @@include("../blocks/modules/sms/sms.html")
+            </div>
+        </section>
     </main>
     @@include("../blocks/modules/footer/footer.html")
     <script src="js/vendor.js"></script>

@@ -1,19 +1,32 @@
-<section class="front-reviews">
-	<div class="container">
-		<img class="decor decor--left" src="img/page-decor--left2.svg" alt="Орнамент">
-		<div class="title title front-reviews__title">
-			<h2 class="title__text">
-				Отзывы
-			</h2>
-		</div>
-		<div class="front-reviews__articles">
-			@@include("../article-reviews/article-reviews.html")
-			@@include("../article-reviews/article-reviews.html")
-			@@include("../article-reviews/article-reviews.html")
-			@@include("../article-reviews/article-reviews.html")
-		</div>
-		<a href="reviews.html" class="front-reviews__btn btn btn--dasheed">
-			Все отзывы
-		</a>
+<div class="front-reviews">
+	<img class="decor decor--left" src="img/page-decor--left2.svg" alt="Орнамент">
+	<div class="title title front-reviews__title">
+		<h2 class="title__text">
+			Отзывы
+		</h2>
 	</div>
-</section>
+	<div class="articles">
+		<div class="articles__content">
+			<div class="articles__item articles__item--50">
+				@@include("../article-reviews/article-reviews.html")
+			</div>
+			<div class="articles__item articles__item--50">
+				@@include("../article-reviews/article-reviews.html")
+			</div>
+			<div class="articles__item articles__item--50">
+				@@include("../article-reviews/article-reviews.html")
+			</div>
+			<div class="articles__item articles__item--50">
+				@@include("../article-reviews/article-reviews.html")
+			</div>
+			<div class="articles__item articles__item--50 articles__item--clear"></div>
+			<div class="articles__item articles__item--50 articles__item--clear"></div>
+			<div class="articles__item articles__item--50 articles__item--clear"></div>
+		</div>
+		<div class="articles__toolbar">
+			<a href="reviews.html" class="front-reviews__btn btn btn--dasheed">
+				Все отзывы
+			</a>
+		</div>
+	</div>	
+</div>

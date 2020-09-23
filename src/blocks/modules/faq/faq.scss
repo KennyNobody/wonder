@@ -1,0 +1,18 @@
+.faq {
+	margin-bottom: 15px;
+	&__head {
+		background-color: #FFE1D2;
+		font-size: rem(18px);
+		padding: rem(28px) rem(15px) rem(28px) rem(88px);
+		background-image: url('../img/accent-icon.svg');
+		background-repeat: no-repeat;
+		background-position: 13px center;
+		p:last-of-type {
+			margin-bottom: 0px;
+		}
+	}
+	&__content {
+		padding-top: rem(26px);
+		padding-bottom: rem(26px);
+	}
+}

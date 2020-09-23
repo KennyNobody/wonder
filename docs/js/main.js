@@ -155,10 +155,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/blocks/modules/3_page-children/page-children.js":
-/*!*************************************************************!*\
-  !*** ./src/blocks/modules/3_page-children/page-children.js ***!
-  \*************************************************************/
+/***/ "./src/blocks/modules/children-page/children-page.js":
+/*!***********************************************************!*\
+  !*** ./src/blocks/modules/children-page/children-page.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -250,7 +250,7 @@ var friendSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.friends_
   navigation: {
     nextEl: '.friends__slider-btn--next',
     prevEl: '.friends__slider-btn--prev',
-    disabledClass: 'friend__btn--disabled'
+    disabledClass: 'friend__slider-btn--disabled'
   },
   breakpoints: {
     0: {
@@ -468,8 +468,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_3_page_children_page_children__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/3_page-children/page-children */ "./src/blocks/modules/3_page-children/page-children.js");
-/* harmony import */ var _modules_3_page_children_page_children__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_3_page_children_page_children__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_children_page_children_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/children-page/children-page */ "./src/blocks/modules/children-page/children-page.js");
+/* harmony import */ var _modules_children_page_children_page__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_children_page_children_page__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _modules_front_intro_front_intro__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/front-intro/front-intro */ "./src/blocks/modules/front-intro/front-intro.js");
 /* harmony import */ var _modules_front_programs_front_programs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/front-programs/front-programs */ "./src/blocks/modules/front-programs/front-programs.js");
 /* harmony import */ var _modules_friends_friends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/friends/friends */ "./src/blocks/modules/friends/friends.js");

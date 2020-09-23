@@ -1,33 +1,8 @@
 .footer {
-	&__section {
-		&--top {
-			padding-top: 44px;
-			padding-bottom: 44px;
-			font-size: rem(16px);
-		}
-		&--bottom {
-			background-color: $dark;
-			color: $light;
-			padding-top: 38px;
-			padding-bottom: 38px;
-			font-size: rem(14px);
-			text-align: center;
-			a {
-				color: #EA4238;
-				text-decoration: none;
-				&:hover {
-					color: $light;
-				}
-			}
-		}
-	}
-	&__container {
-		&--top {
-			display: flex;
-			@include r(1080) {
-				flex-wrap: wrap;
-			}
-		}
+	font-size: rem(16px);
+	display: flex;
+	@include r(1080) {
+		flex-wrap: wrap;
 	}
 	&__column {
 		&--1 {

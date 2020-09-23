@@ -1,0 +1,15 @@
+.article-project {
+	height: 236px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: rem(25px);
+	padding-left: rem(20px);
+	padding-right: rem(20px);
+	&__img {
+		display: block;
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+	}
+}

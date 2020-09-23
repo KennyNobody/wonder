@@ -1,16 +1,9 @@
 .breadcrumbs {
-	background-color: $light;
-	margin-bottom: rem(45px);
-	&__container {
-		
-	}
-	&__content {
-		padding-left: 10px;
-		padding-right: 10px;
-		display: flex;
-		background-color: #F0F6FA;
-		align-items: center;
-	}
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	background-color: #F0F6FA;
+	align-items: center;
 	&__link {
 		color: $blue;
 		display: block;

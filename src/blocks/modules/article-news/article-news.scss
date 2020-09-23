@@ -2,7 +2,6 @@
 	display: block;
 	text-decoration: none;
 	color: $dark;
-	width: calc(33% - 10px);
 	margin-bottom: rem(40px);
 	&:hover {
 		opacity: 0.7;
@@ -10,25 +9,6 @@
 	@include r(700) {
 		width: 100%;
 		margin-bottom: rem(20px);
-	}
-	&--clear {
-		display: block;
-		overflow: hidden;
-		height: 0px;
-		margin-bottom: 0px;
-		@include r(700) {
-			display: none;
-		}
-	}
-	&:nth-child(2n+1) {
-		.article__bg {
-			background-color: $orange;
-		}
-	}
-	&:nth-child(2n) {
-		.article__bg {
-			background-color: $blue;
-		}
 	}
 	&__thumb {
 		display: block;

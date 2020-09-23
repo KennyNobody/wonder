@@ -1,0 +1,96 @@
+.section {
+	position: relative;
+	&--front-intro {
+		margin-bottom: 55px;
+		@include r(1080) {
+			display: none;
+		}
+	}
+	&--front-help {
+		margin-bottom: 72px;
+	}
+	&--front-progams {
+
+	}
+	&--front-news {
+		padding-top: 50px;
+		padding-bottom: 80px;
+	}
+	&--front-faq {
+		padding-top: 50px;
+		padding-bottom: 56px;
+	}
+	&--front-reviews {
+		padding-top: 50px;
+		padding-bottom: 90px;
+	}
+	&--top {
+
+	}
+	&--bottom {
+		margin-bottom: rem(95px);
+	}
+	&--breadcrumbs {
+		background-color: $light;
+		margin-bottom: rem(45px);
+	}
+	
+	&--friends {
+		padding-top: 70px;
+		padding-bottom: 95px;
+	}
+	&--subscription {
+		background-color: $orange;
+		color: $light;
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+	&--discription {
+		background-color: $dark;
+		color: $light;
+		padding-top: 38px;
+		padding-bottom: 38px;
+	}
+	&--bottom {
+
+	}
+	&--footer {
+		padding-top: 44px;
+		padding-bottom: 44px;
+	}
+
+	// Возможно, следующие две нужно объединить
+	&--sms {
+		background-color: $blue;
+		padding-top: 45px;
+		padding-bottom: 45px;
+		color: $light;
+	}
+	&--accent {
+		background-color: $blue;
+		color: $light;
+		padding-top: rem(50px);
+		padding-bottom: rem(50px);
+	}
+
+	&--info {
+		padding-top: rem(60px);
+		font-size: rem(20px);
+		padding-bottom: rem(90px);
+		background: #F0F6FA;
+		margin-bottom: rem(48px);
+		p {
+			margin-bottom: 1rem;
+			&:last-child {
+				margin-bottom: 0px;
+				&:after {
+					clear: both;
+				}
+			}
+		}
+	}
+	// info-3
+	&--contacts {
+		padding-top: 14.6875rem;
+	}
+}
