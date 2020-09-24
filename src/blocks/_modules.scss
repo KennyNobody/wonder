@@ -1,48 +1,45 @@
-@import "modules/body/body";
-@import "modules/container/container";
-@import "modules/main/main";
-@import "modules/header/header";
-@import "modules/section/section";
-@import "modules/main/main";
-@import "modules/mob-menu/mob-menu";
-@import "modules/dropdown/dropdown";
-@import "modules/discription/discription";
-@import "modules/column/column";
-@import "modules/tabs/tabs";
-@import "modules/btn/btn";
-@import "modules/title/title";
-@import "modules/socials/socials";
-@import "modules/text/text";
-@import "modules/sms/sms";
-@import "modules/faq/faq";
-@import "modules/front-intro/front-intro";
-@import "modules/front-news/front-news";
-@import "modules/breadcrumbs/breadcrumbs";
-@import "modules/pagination/pagination";
-@import "modules/info/info";
 @import "modules/articles/articles";
 @import "modules/article-project/article-project";
-@import "modules/sponsor/sponsor";
-@import "modules/partner/partner";
-@import "modules/menu/menu";
-@import "modules/single-page/single-page";
-@import "modules/children-page/children-page";
-@import "modules/footer/footer";
-@import "modules/drop-card/drop-card";
-
-// Дальше не разбирал
-@import "modules/form/form";
-@import "modules/front-help/front-help";
-@import "modules/front-programs/front-programs";
-@import "modules/front-faq/front-faq";
-@import "modules/front-reviews/front-reviews";
-@import "modules/subscription/subscription";
-@import "modules/friends/friends";
-
 @import "modules/article-news/article-news";
+@import "modules/article-reviews/article-reviews";
 @import "modules/article-program/article-program";
 @import "modules/article-children/article-children";
-@import "modules/article-reviews/article-reviews";
+@import "modules/body/body";
+@import "modules/btn/btn";
+@import "modules/breadcrumbs/breadcrumbs";
+@import "modules/container/container";
+@import "modules/children-page/children-page";
+@import "modules/column/column";
+@import "modules/dropdown/dropdown";
+@import "modules/drop-card/drop-card";
+@import "modules/discription/discription";
+@import "modules/info/info";
+@import "modules/faq/faq";
+@import "modules/front-intro/front-intro";
+@import "modules/front-help/front-help";
+@import "modules/front-faq/front-faq";
+@import "modules/front-programs/front-programs";
+@import "modules/form/form";
+@import "modules/friends/friends";
+@import "modules/footer/footer";
+@import "modules/header/header";
+@import "modules/main/main";
+@import "modules/menu/menu";
+@import "modules/mob-menu/mob-menu";
+@import "modules/pagination/pagination";
+@import "modules/partner/partner";
+@import "modules/section/section";
+@import "modules/single-page/single-page";
+@import "modules/socials/socials";
+@import "modules/sponsor/sponsor";
+@import "modules/sms/sms";
+@import "modules/tabs/tabs";
+@import "modules/title/title";
+@import "modules/text/text";
+
+// Дальше не разбирал
+
+@import "modules/subscription/subscription";
 
 @import "modules/12_page-team/page-team";
 @import "modules/22_page-result/page-result";

@@ -12,8 +12,13 @@
     &--252 {
         width: 252px;
     }
+    &--normal {
+        width: fit-content;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: inline-flex;
+    }
     &--dasheed {
-        width: 158px;
         border: 2px dashed $green;
         box-sizing: border-box;
         border-radius: 4px;

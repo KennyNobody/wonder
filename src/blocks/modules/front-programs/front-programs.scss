@@ -1,21 +1,16 @@
 .front-programs {
-	&__title {
-		margin-bottom: 60px;
-	}
-	&__slider {
-		position: static;
+	padding-left: 113px;
+	padding-right: 113px;
+	position: relative;
+	@include r(680) {
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 	&__wrapper {
 		position: static;
 	}
-	&__content {
-		padding-left: 113px;
-		padding-right: 113px;
-		position: relative;
-		@include r(680) {
-			padding-left: 10%;
-			padding-right: 10%;
-		}
+	&__slider {
+		position: static;
 	}
 	&__icon {
 		display: flex;

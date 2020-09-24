@@ -1,17 +1,7 @@
 .friends {
-	&__decor {
-		&--right {
-			bottom: 10px;
-		}
-	}
-	// &__title {
-	// 	margin-bottom: 70px;
-	// }
-	&__content {
-		position: relative;
-		padding-left: 90px;
-		padding-right: 90px;
-	}
+	position: relative;
+	padding-left: 90px;
+	padding-right: 90px;
 	&__slider {
 		position: static;
 	}
