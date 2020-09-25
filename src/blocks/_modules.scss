@@ -1,14 +1,15 @@
-@import "modules/articles/articles";
-@import "modules/article-project/article-project";
-@import "modules/article-news/article-news";
-@import "modules/article-reviews/article-reviews";
-@import "modules/article-program/article-program";
 @import "modules/article-children/article-children";
+@import "modules/article-news/article-news";
+@import "modules/article-program/article-program";
+@import "modules/article-project/article-project";
+@import "modules/article-reviews/article-reviews";
+@import "modules/articles/articles";
+@import "modules/article-team/article-team";
 @import "modules/body/body";
-@import "modules/btn/btn";
 @import "modules/breadcrumbs/breadcrumbs";
-@import "modules/container/container";
+@import "modules/btn/btn";
 @import "modules/children-page/children-page";
+@import "modules/container/container";
 @import "modules/column/column";
 @import "modules/dropdown/dropdown";
 @import "modules/drop-card/drop-card";
@@ -17,6 +18,7 @@
 @import "modules/faq/faq";
 @import "modules/front-intro/front-intro";
 @import "modules/front-help/front-help";
+@import "modules/front-help-article/front-help-article";
 @import "modules/front-faq/front-faq";
 @import "modules/front-programs/front-programs";
 @import "modules/form/form";
@@ -24,23 +26,21 @@
 @import "modules/footer/footer";
 @import "modules/header/header";
 @import "modules/main/main";
-@import "modules/menu/menu";
+@import "modules/map/map";
+@import "modules/mmenu/mmenu";
 @import "modules/mob-menu/mob-menu";
 @import "modules/pagination/pagination";
 @import "modules/partner/partner";
+@import "modules/report/report";
 @import "modules/section/section";
+@import "modules/subscription/subscription";
 @import "modules/single-page/single-page";
 @import "modules/socials/socials";
 @import "modules/sponsor/sponsor";
-@import "modules/sms/sms";
 @import "modules/tabs/tabs";
+@import "modules/team/team";
 @import "modules/title/title";
 @import "modules/text/text";
 
-// Дальше не разбирал
 
-@import "modules/subscription/subscription";
 
-@import "modules/12_page-team/page-team";
-@import "modules/22_page-result/page-result";
-@import "modules/24_page-contacts/page-contacts";

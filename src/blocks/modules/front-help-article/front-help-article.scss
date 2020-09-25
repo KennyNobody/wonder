@@ -1,0 +1,68 @@
+.front-help-article {
+	width: calc(20% - 20px);
+	text-decoration: none;
+	@include r(1080) {
+		width: calc(25% - 20px);
+	}
+	@include r(680) {
+		width: calc(50% - 20px);
+		margin-bottom: rem(20px);
+	}
+	@include r(420) {
+		width: 100%;
+	}
+	&:nth-child(2n + 1) {
+		.front-help-article__bg {
+			background-color: $orange;
+		}
+	}
+	&:nth-child(2n) {
+		.front-help-article__bg {
+			background-color: $blue;
+		}
+	}
+	&:hover {
+		opacity: 0.7;
+	}
+	&__thumb {
+		display: block;
+		height: 158px;
+		margin-bottom: 14px;
+		border: 1px solid $green;
+		position: relative;
+		@include r(1080) {
+
+		}
+		@include r(680) {
+			height: 240px;
+		}
+		@include r(420) {
+			height: auto;
+		}
+	}
+	&__bg {
+		opacity: 0.2;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		height: 100%;
+		width: 100%;
+		z-index: 0;
+	}
+	&__img {
+		display: block;
+		width: 100%;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		position: relative;
+		z-index: 2;
+	}
+	&__title {
+		color: $dark;
+		line-height: 1.3;
+	}
+	&__discript {
+		color: $green;
+	}
+}

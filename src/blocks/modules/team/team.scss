@@ -1,0 +1,17 @@
+.team {
+	&__wrapper {
+
+	}
+	&__slide {
+		&:nth-child(2n+1){
+			.article-team__bg {
+				background-color: $blue;
+			}
+		}
+		&:nth-child(2n){
+			.article-team__bg {
+				background-color: $orange;
+			}
+		}
+	}
+}

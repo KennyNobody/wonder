@@ -21,9 +21,27 @@
         font-size: rem(34px);
         line-height: rem(36px);
     }
+    &__toolbar {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+    }
     &__discript {
         font-size: 16px;
         line-height: 24px;
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--prev {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+        &--next {
+
+        }
     }
     @include r(1080) {
 

@@ -1,0 +1,10 @@
+.report {
+	text-align: center;
+	margin-bottom: rem(20px);
+	a {
+		color: #557383;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

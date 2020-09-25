@@ -34,17 +34,28 @@
                 </div>
             </div>
         </section>
-        <section class="section section--top section--bottom">
+        <section class="section section--top">
             <div class="container">
                 <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент">
-                <div class="team-page">
-                    <div class="title team-page__title">
-                        <h2 class="title__text">
-                            Команда Верю В Чудо
-                        </h2>
+
+                <div class="title title--toolbar">
+                    <h2 class="title__text">
+                        Команда Верю В Чудо
+                    </h2>
+                    <div class="title__toolbar">
+                        <button class="slider-btn slider-btn--prev slider-btn--team slider-btn--team-prev">
+                            <svg class="icon-svg">
+                                <use xlink:href="./img/sprites/sprite.svg#next"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-btn slider-btn--next slider-btn--team slider-btn--team-next">
+                            <svg class="icon-svg">
+                                <use xlink:href="./img/sprites/sprite.svg#next"></use>
+                            </svg>
+                        </button>
                     </div>
-                    Слайдер
                 </div>
+                @@include("../blocks/modules/team/team.html")
             </div>
         </section>
         <section class="section section--info">
@@ -59,77 +70,128 @@
                 </div>
             </div>
         </section>
-        <section class="team-page">
+        <section class="section">
             <div class="container">
-                <div class="title title--blue title--toolbar">
-                    <h2 class="title__text">
-                        Команда «Верю в чудо» — это:
-                    </h2>
-                    <a href="" class="team-page__btn btn btn--dasheed">Схема коммуникации «Верю в чудо»</a>
-                </div>
-                <div class="team-page__columns">
-                    <div class="team-page__column">
-                        <div class="text">
-                            <h4>
-                                Команда хосписно-паллиативной службы:
-                            </h4>
-                            <ul>
-                                <li>
-                                    Руководитель службы
-                                </li>
-                                <li>
-                                    Медицинский юрист
-                                </li>
-                                <li>
-                                    Бренд-менеджер
-                                </li>
-                                <li>
-                                    Врачи (3 врача)
-                                </li>
-                                <li>
-                                    Психологи (3 человека)
-                                </li>
-                                <li>
-                                    Медико-социальные няни (2 человека)
-                                </li>
-                                <li>
-                                    Старшая медицинская сестра (1 человек)
-                                </li>
-                                <li>
-                                    Медицинская сестра (1 человек)
-                                </li>
-                                <li>
-                                    Координатор проекта «Дом Фрупполо»
-                                </li>
-                            </ul>
-                        </div>
+                <div class="single-page">
+                    <div class="title title--blue title--toolbar">
+                        <h2 class="title__text">
+                            Команда «Верю в чудо» — это:
+                        </h2>
+                        <a href="" class="btn btn--normal btn--dasheed">Схема коммуникации «Верю в чудо»</a>
                     </div>
-                    <div class="team-page__column">
-                        <div class="text">
-                            <h4>
-                                Административный штат:
-                            </h4>
-                            <ul>
-                                <li>директор</li>
-                                <li>коммуникативный координатор</li>
-                                <li>контент-менеджер</li>
-                                <li>координатор волонтёрских проектов</li>
-                                <li>ивент-фандрайзер</li>
-                                <li>бухгалтер</li>
-                            </ul>
+                    <div class="columns">
+                        <div class="columns__column columns__column--33">
+                            <div class="text">
+                                <h4>
+                                    Команда хосписно-паллиативной службы:
+                                </h4>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            Руководитель службы
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Медицинский юрист
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Бренд-менеджер
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Врачи (3 врача)
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Психологи (3 человека)
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Медико-социальные няни (2 человека)
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Старшая медицинская сестра (1 человек)
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Медицинская сестра (1 человек)
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Координатор проекта «Дом Фрупполо»
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="team-page__column">
-                        <div class="text">
-                            <h4>
-                                Проектные сотрудники:
-                            </h4>
-                            <ul>
-                                <li>Руководитель программы «Больничные дети-сироты»</li>
-                                <li>СуперМамы (нянечки в больницах; 5 человек)</li>
-                            </ul> 
+                        <div class="columns__column columns__column--33">
+                            <div class="text">
+                                <h4>
+                                    Административный штат:
+                                </h4>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            директор
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            коммуникативный координатор
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            контент-менеджер
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            координатор волонтёрских проектов
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            ивент-фандрайзер
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            бухгалтер
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-
+                        <div class="columns__column columns__column--33">
+                            <div class="text">
+                                <h4>
+                                    Проектные сотрудники:
+                                </h4>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            Руководитель программы «Больничные дети-сироты»
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            СуперМамы (нянечки в больницах; 5 человек)
+                                        </span>
+                                    </li>
+                                </ul> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -32,6 +32,9 @@
 	}
 	&__slide {
 		text-align: center;
+		color: $dark;
+		text-decoration: none;
+		transition: 0.3s opacity;
 		&:nth-child(2n+1){
 			.front-programs__icon {
 				background-color: $blue;
@@ -41,6 +44,9 @@
 			.front-programs__icon {
 				background-color: $orange;
 			}
+		}
+		&:hover {
+			opacity: 0.7;
 		}
 	}
 	&__slider-btn {

@@ -33,3 +33,18 @@
 		width: calc(100% / 12 * 11);
 	}
 }
+
+.columns {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	&__column {
+		margin-bottom: 1rem;
+		&--50 {
+			width: calc(50% - 10px);
+		}
+		&--33 {
+			width: calc(33% - 10px);
+		}
+	}
+}

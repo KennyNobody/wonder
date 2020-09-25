@@ -8,6 +8,8 @@
     background-color: #BECDD6;
     width: 36px;
     height: 36px;
+    border: none;
+    cursor: pointer;
     svg {
         display: block;
         width: 12px;
@@ -28,5 +30,11 @@
     &--disabled {
         pointer-events: none;
         opacity: 0.5;
+    }
+    &--team {
+        margin-right: 10px;
+        &:last-of-type {
+            margin-right: 0px;
+        }
     }
 }

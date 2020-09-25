@@ -30,11 +30,11 @@
  	<header class="header">
  		<div class="container header__container">
  			<div class="header__line header__line--1">
- 				<a href="#" class="header__burger">
+ 				<button class="header__burger">
  					<svg class="icon-svg">
  						<use xlink:href="./img/sprites/sprite.svg#burger"></use>
  					</svg>
- 				</a>
+ 				</button>
  				<nav class="header__nav">
  					<a href="we.html" class="header__link">
  						ВерюВЧудовцы
@@ -260,15 +260,14 @@
         </section>
         <section class="section section--top">
             <div class="container">
-                <div class="single-page">
                     <img class="decor decor--left" src="img/page-decor--left.svg" alt="Орнамент">
                     <div class="title">
                         <h2 class="title__text">
                             Адресная помощь
                         </h2>
                     </div>
-                    <div class="single-page__columns">
-                        <div class="single-page__column">
+                    <div class="columns">
+                        <div class="columns__column columns__column--50">
                             <div class="single-page__content">
                                 <div class="text">
                                     <h4>
@@ -321,7 +320,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-page__column">
+                        <div class="columns__column columns__column--50">
                             <div class="accent accent--block">
                                 <div class="text">
                                     <h6>
@@ -402,7 +401,7 @@
             </div>
         </section>
     </main>
-    <footer class="section">
+    <footer class="section section--footer">
 	<section class="section section--friends">
 		<div class="container">
 			<div class="title title--center">
@@ -474,7 +473,7 @@
 </div>
 		</div>
 	</section>
-	<section class="section section--footer">
+	<section class="section">
 		<div class="container">
 			<div class="footer">
 				<div class="column-3 footer__column footer__column--1">
@@ -594,91 +593,6 @@
 		</div>
 	</section>
 </footer>
-<div class="demo">
-	<div class="container demo__container">
-		<div class="demo__column">
-			<a href="/" class="demo__link">
-				1. Главная
-			</a>
-			<a href="/2-page.html" class="demo__link">
-				2. Помочь детям
-			</a>
-			<a href="/3-page.html" class="demo__link">
-				3. Страница ребенка
-			</a>
-			<a href="/4-page.html" class="demo__link">
-				4. Помочь ребенку
-			</a>
-			<a href="/5-page.html" class="demo__link">
-				5. Получить помощь
-			</a>
-			<a href="/6-page.html" class="demo__link">
-				6. Адресная помощь
-			</a>
-			<a href="/7-page.html" class="demo__link">
-				7. Паллиативная помощь
-			</a>
-			<a href="/8-page.html" class="demo__link">
-				8. Ты нам нужен
-			</a>
-			<a href="/9-page.html" class="demo__link">
-				9. Юридическая помощь
-			</a>
-			<a href="/10-page.html" class="demo__link">
-				10. ВерюВЧудовцы
-			</a>
-			<a href="/11-page.html" class="demo__link">
-				11. Новости
-			</a>
-			<a href="/12-page.html" class="demo__link">
-				12. Команда Верю в чудо
-			</a>
-			<a href="/13-page.html" class="demo__link">
-				13. Попечители
-			</a>
-		</div>
-		<div class="demo__column">
-			<a href="/14-page.html" class="demo__link">
-				14. F.A.Q.
-			</a>
-			<a href="/15-page.html" class="demo__link">
-				15. Библиотека
-			</a>
-			<a href="/16-page.html" class="demo__link">
-				16. Один материал
-			</a>
-			<a href="/17-page.html" class="demo__link">
-				17. Программы
-			</a>
-			<a href="/18-page.html" class="demo__link">
-				18. Типовая внутренняя
-			</a>
-			<a href="/19-page.html" class="demo__link">
-				19. Типовая программа/проект
-			</a>
-			<a href="/20-page.html" class="demo__link">
-				20. Партнеры
-			</a>
-			<a href="/21-page.html" class="demo__link">
-				21. Помочь центру
-			</a>
-			<a href="/22-page.html" class="demo__link">
-				22. Отчетность
-			</a>
-			<a href="/23-page.html" class="demo__link">
-				23. Отзывы
-			</a>
-			<a href="/24-page.html" class="demo__link">
-				24. Контакты
-			</a>
-			<a href="/none.html" class="demo__link">
-				25. 404
-			</a>
-		</div>
-	</div>
-</div>
-</div>
-
 <nav class="menu" id="menu">
 	<ul>
 		<li>
@@ -786,6 +700,91 @@
 		</li>
 	</ul>
 </nav>
+<div class="demo">
+	<div class="container demo__container">
+		<div class="demo__column">
+			<a href="/" class="demo__link">
+				1. Главная
+			</a>
+			<a href="/2-page.html" class="demo__link">
+				2. Помочь детям
+			</a>
+			<a href="/3-page.html" class="demo__link">
+				3. Страница ребенка
+			</a>
+			<a href="/4-page.html" class="demo__link">
+				4. Помочь ребенку
+			</a>
+			<a href="/5-page.html" class="demo__link">
+				5. Получить помощь
+			</a>
+			<a href="/6-page.html" class="demo__link">
+				6. Адресная помощь
+			</a>
+			<a href="/7-page.html" class="demo__link">
+				7. Паллиативная помощь
+			</a>
+			<a href="/8-page.html" class="demo__link">
+				8. Ты нам нужен
+			</a>
+			<a href="/9-page.html" class="demo__link">
+				9. Юридическая помощь
+			</a>
+			<a href="/10-page.html" class="demo__link">
+				10. ВерюВЧудовцы
+			</a>
+			<a href="/11-page.html" class="demo__link">
+				11. Новости
+			</a>
+			<a href="/12-page.html" class="demo__link">
+				12. Команда Верю в чудо
+			</a>
+			<a href="/13-page.html" class="demo__link">
+				13. Попечители
+			</a>
+		</div>
+		<div class="demo__column">
+			<a href="/14-page.html" class="demo__link">
+				14. F.A.Q.
+			</a>
+			<a href="/15-page.html" class="demo__link">
+				15. Библиотека
+			</a>
+			<a href="/16-page.html" class="demo__link">
+				16. Один материал
+			</a>
+			<a href="/17-page.html" class="demo__link">
+				17. Программы
+			</a>
+			<a href="/18-page.html" class="demo__link">
+				18. Типовая внутренняя
+			</a>
+			<a href="/19-page.html" class="demo__link">
+				19. Типовая программа/проект
+			</a>
+			<a href="/20-page.html" class="demo__link">
+				20. Партнеры
+			</a>
+			<a href="/21-page.html" class="demo__link">
+				21. Помочь центру
+			</a>
+			<a href="/22-page.html" class="demo__link">
+				22. Отчетность
+			</a>
+			<a href="/23-page.html" class="demo__link">
+				23. Отзывы
+			</a>
+			<a href="/24-page.html" class="demo__link">
+				24. Контакты
+			</a>
+			<a href="/none.html" class="demo__link">
+				25. 404
+			</a>
+		</div>
+	</div>
+</div>
+
+
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
 </body>

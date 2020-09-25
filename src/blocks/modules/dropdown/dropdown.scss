@@ -3,15 +3,17 @@
 	color: $light;
 	z-index: 3;
 	max-height: 0px;
-	@include r(1080) {
-		display: none;
-	}
 	overflow: hidden;
 	transition: 0.3s all;
 	opacity: 0;
+	visibility: hidden;
+	@include r(1080) {
+		display: none;
+	}
 	&--open {
 		max-height: 1600px;
 		opacity: 1;
+		visibility: visible;
 	}
 	&__content {
 		box-sizing: border-box;
@@ -39,15 +41,14 @@
 		li {
 			ul {
 				li {
-					border-bottom: 0px;
-					padding-top: 0px;
+					border-bottom: 0;
+					padding-top: 0;
 					margin-bottom: 0.75rem;
 					border-bottom: none;
 				}
 				a {
 					color: $green;
-					margin-bottom: 0px;
-					
+					margin-bottom: 0;	
 				}
 			}
 		}

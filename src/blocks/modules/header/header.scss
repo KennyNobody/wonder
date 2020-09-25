@@ -109,6 +109,8 @@
 		transition: 0.3s all;
 		padding: 8px;
 		margin-right: 12px;
+		border: none;
+		background: none;
 		@include r(1080) {
 			display: none;
 		}

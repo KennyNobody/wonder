@@ -193,14 +193,42 @@
 
 /***/ }),
 
-/***/ "./src/blocks/modules/footer/footer.js":
-/*!*********************************************!*\
-  !*** ./src/blocks/modules/footer/footer.js ***!
-  \*********************************************/
+/***/ "./src/blocks/modules/dropdown/dropdown.js":
+/*!*************************************************!*\
+  !*** ./src/blocks/modules/dropdown/dropdown.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+// modules.define('dropdown', ['i-bem-dom'], function(provide, bemDom) {
+// 	provide(bemDom.declBlock(this.name, {
+// 		onSetMod: {
+// 			js: {
+// 				inited: function() {
+// 				}
+// 			}
+// 		}
+// 	}));
+// });
+(function dropMenu() {
+  var btn = document.querySelector('.header__burger');
+  var block = document.querySelector('.dropdown');
+  var menuOpen = false;
 
+  if (btn && block) {
+    btn.addEventListener('click', toggle);
+  }
+
+  function toggle() {
+    if (menuOpen == true) {
+      block.classList.remove('dropdown--open');
+      menuOpen = false;
+    } else {
+      block.classList.add('dropdown--open');
+      menuOpen = true;
+    }
+  }
+})();
 
 /***/ }),
 
@@ -293,17 +321,6 @@ var introSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.front-int
 
 /***/ }),
 
-/***/ "./src/blocks/modules/front-news/front-news.js":
-/*!*****************************************************!*\
-  !*** ./src/blocks/modules/front-news/front-news.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ "./src/blocks/modules/front-programs/front-programs.js":
 /*!*************************************************************!*\
   !*** ./src/blocks/modules/front-programs/front-programs.js ***!
@@ -344,10 +361,10 @@ var programsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.front-
 
 /***/ }),
 
-/***/ "./src/blocks/modules/header/header.js":
-/*!*********************************************!*\
-  !*** ./src/blocks/modules/header/header.js ***!
-  \*********************************************/
+/***/ "./src/blocks/modules/mmenu/mmenu.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/modules/mmenu/mmenu.js ***!
+  \*******************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -356,47 +373,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var mmenu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mmenu-js */ "./node_modules/mmenu-js/src/mmenu.js");
 
 
-(function dropMenu() {
-  var btn = document.querySelector('.header__burger');
-  var block = document.querySelector('.dropdown');
-  var links = document.querySelectorAll('.dropdown a');
-  setTabindex(-1);
-  var menuOpen = false;
-
-  if (btn && block) {
-    btn.addEventListener('click', toggle);
-  }
-
-  function toggle() {
-    if (menuOpen == true) {
-      block.classList.remove('dropdown--open');
-      menuOpen = false;
-      setTabindex(-1);
-    } else {
-      block.classList.add('dropdown--open');
-      menuOpen = true;
-      setTabindex('');
-    }
-  }
-
-  function setTabindex(tabindex) {
-    for (var i = 0; i < links.length; i++) {
-      links[i].setAttribute("tabindex", tabindex);
-    }
-  }
-
-  document.addEventListener("DOMContentLoaded", function () {
-    new mmenu_js__WEBPACK_IMPORTED_MODULE_0__["default"]("#menu", {
-      "extensions": ["pagedim-black", "position-front"],
-      "navbar": {
-        "title": "#ВерюВЧудо",
-        "sticky": false
-      },
-      "navbars": [{
-        "position": "bottom",
-        "content": ["<a class='fa fa-envelope' href='#/'></a>", "<a class='fa fa-twitter' href='#/'></a>", "<a class='fa fa-facebook' href='#/'></a>"]
-      }]
-    });
+(function () {
+  new mmenu_js__WEBPACK_IMPORTED_MODULE_0__["default"]("#menu", {
+    "extensions": ["pagedim-black", "position-front"],
+    "navbar": {
+      "title": "#ВерюВЧудо",
+      "sticky": false
+    },
+    "navbars": [{
+      "position": "bottom",
+      "content": ["<a class='fa fa-envelope' href='#/'></a>", "<a class='fa fa-twitter' href='#/'></a>", "<a class='fa fa-facebook' href='#/'></a>"]
+    }]
   });
 })();
 
@@ -428,30 +415,55 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/blocks/modules/ui/ui.js":
-/*!*************************************!*\
-  !*** ./src/blocks/modules/ui/ui.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/blocks/modules/team/team.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/modules/team/team.js ***!
+  \*****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-(function () {
-  var drops = document.querySelectorAll('.drop-card');
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/js/swiper.esm.bundle.js");
+// modules.define('team', ['i-bem-dom'], function(provide, bemDom) {
+// provide(bemDom.declBlock(this.name, {
+//     onSetMod: {
+//         js: {
+//             inited: function() {
+//             }
+//         }
+//     }
+// }));
+// });
 
-  if (drops) {
-    for (var i = 0; i < drops.length; i++) {
-      var card = drops[i];
-      toggle(card);
+
+(function initTeamSlider() {
+  var teamSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.team', {
+    direction: 'horizontal',
+    // loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    slideVisibleClass: 'none',
+    navigation: {
+      nextEl: '.slider-btn--team-next',
+      prevEl: '.slider-btn--team-prev',
+      disabledClass: 'slider-btn--disabled'
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      680: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      820: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
     }
-  }
-
-  function toggle(card) {
-    var header = card.querySelector('.drop-card__header');
-    header.addEventListener('click', function (e) {
-      e.preventDefault();
-      card.classList.toggle('drop-card--open');
-    });
-  }
+  });
 })();
 
 /***/ }),
@@ -467,23 +479,19 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_children_page_children_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/children-page/children-page */ "./src/blocks/modules/children-page/children-page.js");
-/* harmony import */ var _modules_children_page_children_page__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_children_page_children_page__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_children_page_children_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/children-page/children-page */ "./src/blocks/modules/children-page/children-page.js");
+/* harmony import */ var _modules_children_page_children_page__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_children_page_children_page__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/dropdown/dropdown */ "./src/blocks/modules/dropdown/dropdown.js");
+/* harmony import */ var _modules_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _modules_front_intro_front_intro__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/front-intro/front-intro */ "./src/blocks/modules/front-intro/front-intro.js");
 /* harmony import */ var _modules_front_programs_front_programs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/front-programs/front-programs */ "./src/blocks/modules/front-programs/front-programs.js");
 /* harmony import */ var _modules_friends_friends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/friends/friends */ "./src/blocks/modules/friends/friends.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_ui_ui__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/ui/ui */ "./src/blocks/modules/ui/ui.js");
-/* harmony import */ var _modules_ui_ui__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_ui_ui__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/front-news/front-news */ "./src/blocks/modules/front-news/front-news.js");
-/* harmony import */ var _modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_front_news_front_news__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/form/form */ "./src/blocks/modules/form/form.js");
+/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_form_form__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_team_team__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/team/team */ "./src/blocks/modules/team/team.js");
+/* harmony import */ var _modules_mmenu_mmenu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/mmenu/mmenu */ "./src/blocks/modules/mmenu/mmenu.js");
 /* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/subscription/subscription */ "./src/blocks/modules/subscription/subscription.js");
 /* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/form/form */ "./src/blocks/modules/form/form.js");
-/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_form_form__WEBPACK_IMPORTED_MODULE_10__);
-
 
 
 
