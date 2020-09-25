@@ -1,5 +1,5 @@
-# Demo: [believe-in-miracles.netlify.app](https://believe-in-miracles.netlify.app/)
-## Producion: [www.deti39.com](https://www.deti39.com/)
+# Демо: [believe-in-miracles.netlify.app](https://believe-in-miracles.netlify.app/)
+## Продакшн: [www.deti39.com](https://www.deti39.com/)
 
 ![GitHub release](https://img.shields.io/github/release/andreyalexeich/gulp-scss-starter.svg)
 [![dependencies Status](https://david-dm.org/andreyalexeich/gulp-scss-starter/status.svg)](https://david-dm.org/andreyalexeich/gulp-scss-starter)
