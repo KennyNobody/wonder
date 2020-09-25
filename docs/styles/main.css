@@ -4857,44 +4857,8 @@ button {
   user-select: none;
 }
 
-.single-page__title {
-  text-align: left;
-  margin-bottom: 2.5rem;
-}
-
-.single-page__content {
-  margin-bottom: 5rem;
-}
-
-.single-page__columns {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.single-page__column {
-  margin-bottom: 2rem;
-  width: calc(50% - 10px);
-  float: none;
-  height: fit-content;
-}
-
-.single-page__column--33 {
-  width: calc(33% - 10px);
-}
-
-.single-page__block {
-  margin-bottom: 3.125rem;
-}
-
 .single-page__discript {
   margin-bottom: 5rem;
-}
-
-.single-page__preview-thumb {
-  display: block;
-  width: 100%;
-  margin-bottom: 2.8125rem;
 }
 
 .single-page__icon-title {
