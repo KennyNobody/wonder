@@ -7,9 +7,17 @@
     background-color: $light;
     border-top: 4px solid $blue;
     @include r(1080) {
-
+        background-image: none;
     }
     @include r(440) {
 
+    }
+    &--style-front {
+        background-repeat: no-repeat;
+        background-position: right calc((( 100% + 1080px) / 2) + 150px) top 490px, left calc((( 100% + 1080px) / 2) + 190px) top 1404px, right calc((( 100% + 1080px) / 2) + 190px) top 2450px, left calc((( 100% + 1080px) / 2) + 100px) top 3350px;
+    }
+    &--style-1 {
+        background-repeat: no-repeat;
+        background-position: right calc((( 100% + 1080px) / 2) + 150px) top 175px, left calc((( 100% + 1080px) / 2) + 190px) top 1404px, right calc((( 100% + 1080px) / 2) + 190px) top 2160px, left calc((( 100% + 1080px) / 2) + 100px) top 3350px;
     }
 }

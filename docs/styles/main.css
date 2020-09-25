@@ -3458,6 +3458,16 @@ button {
   border-top: 4px solid #008AC4;
 }
 
+.body--style-front {
+  background-repeat: no-repeat;
+  background-position: right calc((( 100% + 1080px) / 2) + 150px) top 490px, left calc((( 100% + 1080px) / 2) + 190px) top 1404px, right calc((( 100% + 1080px) / 2) + 190px) top 2450px, left calc((( 100% + 1080px) / 2) + 100px) top 3350px;
+}
+
+.body--style-1 {
+  background-repeat: no-repeat;
+  background-position: right calc((( 100% + 1080px) / 2) + 150px) top 175px, left calc((( 100% + 1080px) / 2) + 190px) top 1404px, right calc((( 100% + 1080px) / 2) + 190px) top 2160px, left calc((( 100% + 1080px) / 2) + 100px) top 3350px;
+}
+
 .breadcrumbs {
   padding-left: 10px;
   padding-right: 10px;
@@ -3931,6 +3941,12 @@ button {
   max-width: 170px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.front-intro__btn:hover {
+  opacity: 0.7;
 }
 
 .front-intro__swipe {
@@ -4672,7 +4688,6 @@ button {
 }
 
 .section--breadcrumbs {
-  background-color: #ffffff;
   margin-bottom: 2.8125rem;
   padding-top: 0;
   padding-bottom: 0;
@@ -5400,6 +5415,10 @@ button {
 }
 
 @media only screen and (max-width: 1080px) {
+  .body {
+    background-image: none;
+  }
+
   .dropdown {
     display: none;
   }
