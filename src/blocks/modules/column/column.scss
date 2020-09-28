@@ -42,9 +42,15 @@
 		margin-bottom: 1rem;
 		&--50 {
 			width: calc(50% - 10px);
+			@include r(1080) {
+				width: 100%;
+			}
 		}
 		&--33 {
 			width: calc(33% - 10px);
+			@include r(1080) {
+				width: 100%;
+			}
 		}
 	}
 }

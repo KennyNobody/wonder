@@ -2,20 +2,42 @@
 	position: relative;
 	padding-top: rem(50px);
 	padding-bottom: rem(50px);
+	// @include r(1080) {
+	// 	padding-top: rem(30px);
+	// 	padding-bottom: rem(30px);
+	// }
 	&--breadcrumbs {
 		margin-bottom: rem(45px);
 		padding-top: 0;
 		padding-bottom: 0;
+		@include r(480) {
+			display: none;
+		}
+	}
+	&--intro {
+		@include r(1080) {
+			display: none;
+		}
 	}
 	&--top {
 		padding-top: 0;
+		@include r(1080) {
+			padding-top: 0;
+		}
 	}
 	&--bottom {
 		margin-bottom: rem(95px);
+		@include r(1080) {
+			margin-bottom: rem(40px);
+		}
 	}
 	&--friends {
 		padding-top: rem(55px);
 		padding-bottom: rem(95px);
+		@include r(1080) {
+			padding-top: rem(50px);
+			padding-bottom: rem(50px);
+		}
 	}
 	&--subscription {
 		background-color: $orange;
@@ -30,6 +52,10 @@
 	&--footer {
 		padding-top: 0;
 		padding-bottom: 0;
+		@include r(1080) {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
 	}
 
 	&--accent {
@@ -39,14 +65,20 @@
 		padding-bottom: rem(50px);
 		margin-bottom: rem(45px);
 		margin-top: rem(45px);
+		@include r(1080) {
+			margin-top: 0;
+			padding-top: rem(40px);
+			padding-bottom: rem(40px);
+			margin-bottom: 0;
+		}
 	}
 
 	&--info {
 		padding-top: rem(60px);
 		font-size: rem(20px);
-		padding-bottom: rem(90px);
+		padding-bottom: rem(60px);
 		background: #F0F6FA;
-		margin-bottom: rem(48px);
+		margin-bottom: rem(45px);
 		p {
 			margin-bottom: 1rem;
 			&:last-child {
@@ -60,6 +92,9 @@
 	// info-3
 	&--contacts {
 		padding-top: 14.6875rem;
+		@include r(1080) {
+			padding-top: rem(210px);
+		}
 	}
 	&--map {
 		margin-bottom: rem(-210px);

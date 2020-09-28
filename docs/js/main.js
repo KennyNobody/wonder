@@ -165,6 +165,7 @@
 (function toggleChildrenTabs() {
   var btn = document.querySelectorAll('.children-page__nav-link');
   var tab = document.querySelectorAll('.children-page__tab');
+  var select = document.querySelector('.children-page__mob-nav');
 
   if (btn && tab && btn.length == tab.length) {
     var _loop = function _loop(i) {
@@ -179,6 +180,13 @@
     }
   }
 
+  if (select) {
+    select.addEventListener('change', function (e) {
+      var item = select.value;
+      changeActive(item);
+    });
+  }
+
   function changeActive(n) {
     for (var _i = 0; _i < btn.length; _i++) {
       btn[_i].classList.remove('children-page__nav-link--active');
@@ -188,6 +196,44 @@
 
     btn[n].classList.add('children-page__nav-link--active');
     tab[n].classList.add('children-page__tab--active');
+  }
+})();
+
+/***/ }),
+
+/***/ "./src/blocks/modules/drop-card/drop-card.js":
+/*!***************************************************!*\
+  !*** ./src/blocks/modules/drop-card/drop-card.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// modules.define('drop-card', ['i-bem-dom'], function(provide, bemDom) {
+// provide(bemDom.declBlock(this.name, {
+//     onSetMod: {
+//         js: {
+//             inited: function() {
+//             }
+//         }
+//     }
+// }));
+// });
+(function toggleDropCard() {
+  var drops = document.querySelectorAll('.drop-card');
+
+  if (drops) {
+    for (var i = 0; i < drops.length; i++) {
+      toggle(drops[i]);
+      console.log('Привет');
+    }
+  }
+
+  function toggle(card) {
+    var header = card.querySelector('.drop-card__header');
+    header.addEventListener('click', function (e) {
+      e.preventDefault();
+      card.classList.toggle('drop-card--open');
+    });
   }
 })();
 
@@ -312,6 +358,7 @@ __webpack_require__.r(__webpack_exports__);
 var introSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.front-intro__slider', {
   // Optional parameters
   direction: 'horizontal',
+  autoHeight: true,
   navigation: {
     nextEl: '.front-intro__swipe--next',
     prevEl: '.front-intro__swipe--prev',
@@ -483,15 +530,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_children_page_children_page__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_children_page_children_page__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _modules_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/dropdown/dropdown */ "./src/blocks/modules/dropdown/dropdown.js");
 /* harmony import */ var _modules_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_front_intro_front_intro__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/front-intro/front-intro */ "./src/blocks/modules/front-intro/front-intro.js");
-/* harmony import */ var _modules_front_programs_front_programs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/front-programs/front-programs */ "./src/blocks/modules/front-programs/front-programs.js");
-/* harmony import */ var _modules_friends_friends__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/friends/friends */ "./src/blocks/modules/friends/friends.js");
-/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/form/form */ "./src/blocks/modules/form/form.js");
-/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_form_form__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_team_team__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/team/team */ "./src/blocks/modules/team/team.js");
-/* harmony import */ var _modules_mmenu_mmenu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/mmenu/mmenu */ "./src/blocks/modules/mmenu/mmenu.js");
-/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/subscription/subscription */ "./src/blocks/modules/subscription/subscription.js");
-/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _modules_drop_card_drop_card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/drop-card/drop-card */ "./src/blocks/modules/drop-card/drop-card.js");
+/* harmony import */ var _modules_drop_card_drop_card__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_drop_card_drop_card__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_front_intro_front_intro__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/front-intro/front-intro */ "./src/blocks/modules/front-intro/front-intro.js");
+/* harmony import */ var _modules_front_programs_front_programs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/front-programs/front-programs */ "./src/blocks/modules/front-programs/front-programs.js");
+/* harmony import */ var _modules_friends_friends__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/friends/friends */ "./src/blocks/modules/friends/friends.js");
+/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! %modules%/form/form */ "./src/blocks/modules/form/form.js");
+/* harmony import */ var _modules_form_form__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_form_form__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_team_team__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! %modules%/team/team */ "./src/blocks/modules/team/team.js");
+/* harmony import */ var _modules_mmenu_mmenu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! %modules%/mmenu/mmenu */ "./src/blocks/modules/mmenu/mmenu.js");
+/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! %modules%/subscription/subscription */ "./src/blocks/modules/subscription/subscription.js");
+/* harmony import */ var _modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_subscription_subscription__WEBPACK_IMPORTED_MODULE_10__);
+
 
 
 

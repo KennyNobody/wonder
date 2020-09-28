@@ -6,13 +6,23 @@
 	&__columns {
 		display: flex;
 		justify-content: space-between;
+		@include r(1080) {
+			display: block;
+		}
 	}
 	&__column {
 		&--left {
 			width: calc(100% / 12 * 5 - 10px);
+			@include r(1080) {
+				width: 100%;
+				margin-bottom: rem(35px);
+			}
 		}
 		&--right {
 			width: calc(100% / 12 * 7 - 10px);
+			@include r(1080) {
+				width: 100%;
+			}
 		}
 	}
 	&__nav {
@@ -31,11 +41,32 @@
 			z-index: -1;
 		}
 	}
+	&__mob-nav {
+		display: block;
+		width: 100%;
+		border: 2px solid $blue;
+		border-radius: 5px;
+		margin-bottom: rem(25px);
+		color: $blue;
+		visibility: hidden;
+		height: 0px;
+		overflow: hidden;
+		display: none;
+		font-family: $main-font;
+		@include r(1080) {
+			display: block;
+			visibility: visible;
+			height: 40px;
+		}
+	}
 	&__nav-link {
 		font-size: rem(18px);
 		color: $blue;
 		padding-bottom: 12px;
 		text-decoration: none;
+		@include r(1080) {
+			display: none;
+		}
 		&:hover {
 			opacity: 0.7;
 		}
@@ -84,6 +115,9 @@
 	&__diagnose {
 		font-size: rem(18px);
 		margin-bottom: 1.5rem;
+		@include r(1080) {
+			font-size: rem(16px);
+		}
 		b {
 			font-weight: bold;
 		}
@@ -91,10 +125,16 @@
 	&__money {
 		margin-bottom: rem(34px);
 		font-size: rem(18px);
+		@include r(1080) {
+			font-size: rem(16px);
+		}
 		b {
 			color: $blue;
 			font-weight: 800;
 			font-size: 34px;
+			@include r(1080) {
+				font-size: rem(30px);
+			}
 		}
 	}
 	&__leica {

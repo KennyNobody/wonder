@@ -3,6 +3,9 @@
 	align-items: center;
 	justify-content: center;
 	margin-bottom: rem(35px);
+	@include r(1080) {
+		display: none;
+	}
 	&__thumb {
 		svg {
 			width: 46px;

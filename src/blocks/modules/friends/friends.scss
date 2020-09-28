@@ -1,12 +1,16 @@
 .friends {
 	position: relative;
-	padding-left: 90px;
-	padding-right: 90px;
+	padding-left: rem(90px);
+	padding-right: rem(90px);
+	@include r(1080) {
+		padding-left: rem(45px);
+		padding-right: rem(45px);
+	}
 	&__slider {
 		position: static;
 	}
 	&__slide {
-		height: 110px;
+		height: rem(110px);
 		img {
 			display: block;
 			width: 100%;
@@ -16,7 +20,8 @@
 	}
 	&__slider-btn {
 		position: absolute;
-		top: 38px;
+		top: 50%;
+		transform: translateY(-50%);
 		&--prev {
 			left: 0px;
 			z-index: 2;

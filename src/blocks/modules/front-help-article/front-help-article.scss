@@ -2,10 +2,10 @@
 	width: calc(20% - 20px);
 	text-decoration: none;
 	@include r(1080) {
-		width: calc(25% - 20px);
+		width: calc(25% - 10px);
 	}
 	@include r(680) {
-		width: calc(50% - 20px);
+		width: calc(50% - 10px);
 		margin-bottom: rem(20px);
 	}
 	@include r(420) {

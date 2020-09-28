@@ -1,4 +1,4 @@
-modules.define('mob-menu', ['i-bem-dom'], function(provide, bemDom) {
+modules.define('subtabs', ['i-bem-dom'], function(provide, bemDom) {
 
 provide(bemDom.declBlock(this.name, {
     onSetMod: {

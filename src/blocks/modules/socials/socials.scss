@@ -1,23 +1,21 @@
 .socials {
 	&__link {
 		display: inline-block;
-		margin-right: 6px;
+		margin-right: rem(6px);
 		&:last-child {
-			margin-right: 0px;
+			margin-right: 0;
 		}
 		svg {
-			width: 24px;
-			height: 24px;
+			width: rem(24px);
+			height: rem(24px);
 			display: block;
+			@include r(1080) {
+				width: rem(30px);
+				height: rem(30px);
+			}
 		}
 		&:hover {
 			opacity: 0.6;
 		}
-	}
-	&__header {
-
-	}
-	&__footer {
-
 	}
 }

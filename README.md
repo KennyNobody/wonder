@@ -1,19 +1,12 @@
 # Демо: [believe-in-miracles.netlify.app](https://believe-in-miracles.netlify.app/)
 ## Продакшн: [www.deti39.com](https://www.deti39.com/)
 
-![GitHub release](https://img.shields.io/github/release/andreyalexeich/gulp-scss-starter.svg)
-[![dependencies Status](https://david-dm.org/andreyalexeich/gulp-scss-starter/status.svg)](https://david-dm.org/andreyalexeich/gulp-scss-starter)
-[![devDependencies Status](https://david-dm.org/andreyalexeich/gulp-scss-starter/dev-status.svg)](https://david-dm.org/andreyalexeich/gulp-scss-starter?type=dev)
-![GitHub stars](https://img.shields.io/github/stars/andreyalexeich/gulp-scss-starter.svg?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/andreyalexeich/gulp-scss-starter.svg?style=social)
-
 ## Особенности
 * именование классов по [БЭМ](https://ru.bem.info/)
 * используется БЭМ-структура
 * используется препроцессор [SCSS](https://sass-lang.com/)
 * используется транспайлер [Babel](https://babeljs.io/) для поддержки современного JavaScript (ES6) в браузерах
 * используется [Webpack](https://webpack.js.org/) для сборки JavaScript-модулей
-* используется CSS-сетка [smart-grid](https://github.com/dmitry-lavrik/smart-grid) на основе Bootstrap для быстрой адаптивной вёрстки
 * используется жёсткий кодгайд
 * используется проверка кода на ошибки перед коммитом
 
@@ -114,12 +107,6 @@ blocks
 ### Страницы проекта
 * страницы проекта находятся в папке ```src/views/pages```
     * главная страница: ```src/views/index.html```
-
-### Шрифты
-* шрифты находятся в папке ```src/fonts```
-    * используйте [форматы](https://caniuse.com/#search=woff) ```.woff``` и ```.woff2```
-    * шрифты подключаются в файл ```src/styles/base/_fonts.scss```
-    * сконвертировать локальные шрифты можно с помощью [данного сервиса](https://onlinefontconverter.com/)
 
 ### Изображения
 * изображения находятся в папке ```src/img```

@@ -3,7 +3,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin-bottom: 25px;
+		margin-bottom: rem(25px);
+		@include r(1080) {
+			margin-bottom: rem(20px);
+		}
 		&--center {
 			justify-content: center;
 		}
@@ -12,15 +15,33 @@
 		width: 100%;
 		&--50 {
 			width: calc(50% - 20px);
+			@include r(1080) {
+				width: 100%;
+			}
 		}
 		&--33 {
 			width: calc(33% - 15px);
+			@include r(1080) {
+				width: 100%;
+			}
 		}
 		&--25 {
 			width: calc(25% - 10px);
+			@include r(1080) {
+				width: calc(50% - 20px);
+			}
+			@include r(580) {
+				width: 100%;
+			}
 		}
 		&--20 {
 			width: calc(25% - 20px);
+			@include r(1080) {
+				width: calc(50% - 20px);
+			}
+			@include r(580) {
+				width: 100%;
+			}
 		}
 		&--clear {
 			margin: 0;
@@ -81,5 +102,11 @@
 	}
 	&__toolbar {
 		text-align: center;
+		&--mobile {
+			display: none;
+			@include r(1080) {
+				display: block;
+			}
+		}
 	}
 }

@@ -24,6 +24,9 @@
         &:hover {
             opacity: 0.7;
         }
+        @include r(700) {
+            padding: rem(16px) 0px rem(16px) rem(34px);
+        }
     }
     &__content {
         padding-bottom: rem(20px);
@@ -33,6 +36,6 @@
         overflow: hidden;
     }
     p {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 }

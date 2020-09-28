@@ -2,7 +2,8 @@
 	padding-top: 25px;
 	padding-bottom: 20px;
 	@include r(1080) {
-
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	&__container {
 		@include r(1080) {
@@ -42,7 +43,10 @@
 		display: inline-block;
 		img {
 			width: 160px;
-			height: 84px;
+			height: auto;
+			@include r(480) {
+				width: 120px;
+			}
 		}
 		&:hover {
 			opacity: 0.7;
@@ -145,8 +149,8 @@
 			@include r(1080) {
 				width: 100%;
 				text-align: center;
-				padding-top: 15px;
-				padding-bottom: 15px;
+				padding-top: 25px;
+				padding-bottom: 25px;
 			}
 		}
 		&--2 {
