@@ -100,5 +100,8 @@
 	&__check-text {
 		font-size: 14px;
 		user-select: none;
+		a {
+			color: inherit;
+		}
 	}
 }

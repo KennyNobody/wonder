@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>25. Страница 404</title>
+    @@include("../blocks/modules/head/head.html")
+</head>
+<body class="body body--style-1" style="background-image: url('img/page-decor--left.svg'), url('img/page-decor--right.svg'), url('img/page-decor--left2.svg'), url('img/page-decor--right2.svg');">
+    @@include("../blocks/modules/header/header.html")
+    <main class="main">
+        <section class="section section--breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="/" class="breadcrumbs__link">
+                        Главная
+                    </a>
+                    <svg class="icon-svg breadcrumbs__arrow">
+                        <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                    </svg>
+                    <span class="breadcrumbs__link breadcrumbs__link--static">
+                        Контакты
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="section section--top">
+            <div class="container">
+                <div class="columns">
+                    <div class="column column-4 mb-25 mob-center">
+                        <div class="title mb-100">
+                            <h2 class="title__text">
+                                Ошибка 404
+                            </h2>
+                        </div>
+                        <div class="editor mb-25">
+                            <p>
+                                Сладко спит наш кот Степан. <br>
+                                Для вас страницу он и искал? <br>
+                                Бежал, устал, домой пришёл, <br>
+                                Но страницу не нашёл
+                            </p>
+                        </div>
+                        <a href="" class="btn btn--normal btn--dasheed">
+                            На главную
+                        </a>
+                    </div>
+                    <div class="column column-8 mb-25 mob-center">
+                        <img class="img" src="img/404.svg" alt="Страница не найдена">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

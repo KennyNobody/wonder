@@ -25,6 +25,18 @@ input, button {
     }
 }
 
+.mb {
+    &-25 {
+        margin-bottom: 25px;
+    }
+    &-80 {
+        margin-bottom: 80px;
+    }
+    &-100 {
+        margin-bottom: 100px;
+    }
+}
+
 .demo {
     padding-top: rem(35px);
     padding-bottom: rem(35px);
@@ -43,5 +55,11 @@ input, button {
         &:hover {
             opacity: 0.7;
         }
+    }
+}
+
+.mob-center {
+    @include r(1080) {
+        text-align: center;
     }
 }

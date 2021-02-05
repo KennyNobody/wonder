@@ -39,7 +39,7 @@
 
 .prev {
 	padding-left: rem(21px);
-	padding-right: rem(31px);
+	padding-right: rem(20px);
 	font-weight: 800;
 	font-size: rem(16px);
 	line-height: rem(24px);
@@ -48,9 +48,14 @@
 
 .next {
 	padding-right: rem(21px);
-	padding-left: rem(31px);
+	padding-left: rem(20px);
 	font-weight: 800;
 	font-size: rem(16px);
 	line-height: rem(24px);
 	color: $blue;
+}
+
+.disabled {
+	opacity: 0.5;
+	pointer-events: none;
 }

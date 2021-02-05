@@ -91,6 +91,9 @@
 		margin-bottom: rem(30px);
 		width: 100%;
 		height: auto;
+		&--bw {
+			filter: grayscale(100%);
+		}
 		@include r(700) {
 			display: none;
 		}

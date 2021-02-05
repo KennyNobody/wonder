@@ -10,6 +10,9 @@
 	}
 	&-4 {
 		width: calc(100% / 12 * 4);
+		@include r(1080) {
+			width: 100%;
+		}
 	}
 	&-5 {
 		width: calc(100% / 12 * 5);
@@ -22,6 +25,9 @@
 	}
 	&-8 {
 		width: calc(100% / 12 * 8);
+		@include r(1080) {
+			width: 100%;
+		}
 	}
 	&-9 {
 		width: calc(100% / 12 * 9);

@@ -16,15 +16,23 @@
 		position: absolute;
 		z-index: 2;
 		bottom: 15px;
-		left: 0px;
-		right: 0px;
+		right: 19px;
+		display: flex;
+		justify-content: flex-end;
 	}
 	&__btn {
-		max-width: 170px;
+		width: fit-content;
 		margin-left: auto;
 		margin-right: auto;
 		cursor: pointer;
 		transition: 0.3s all;
+		z-index: 3;
+		position: absolute;
+		bottom: 15px;
+		left: 50%;
+		transform: translateX(-50%);
+		padding-left: 25px;
+		padding-right: 25px;
 		&:hover {
 			opacity: 0.7;
 		}
@@ -32,21 +40,18 @@
 	&__swipe {
 		width: 40px;
 		height: 40px;
-		position: absolute;
 		svg {
 			fill: $light;
 			display: block;
 		}
 		&--prev {
-			right: 65px;
-			top: 0px;
+			margin-right: 10px;
 			svg {
 				transform: rotate(180deg);
 			}
 		}
 		&--next {
-			right: 19px;
-			top: 0px;
+			
 		}
 		&--disabled {
 			opacity: 0.6;
