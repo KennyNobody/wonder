@@ -89,8 +89,9 @@
 			margin-right: rem(11px);
 			flex-shrink:0;
 		}
-		span {
-
+		strong {
+			font-weight: 700;
+			font-size: rem(18px);
 		}
 		@include r(700) {
 			justify-content: center;

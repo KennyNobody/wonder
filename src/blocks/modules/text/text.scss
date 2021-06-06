@@ -27,6 +27,7 @@
 	img {
 		display: block;
 		max-width: 100%;
+		height: auto;
 	}
 	i, em {
 		font-style: italic;
@@ -80,28 +81,28 @@
 	}
 	ul {
 		list-style-type: disc;
-		padding-left: 18px;
 		margin-bottom: 1em;
-		color: #C9E0EC;
-		span {
-			color: $dark;
-		}
+		color: $dark;
+		list-style-position: inside;
 		li {
 			margin-bottom: 1em;
+			&::marker {
+				color: #C9E0EC;
+			}
 		}
 	}
 	ol {
 		list-style-type: decimal;
-		padding-left: 18px;
 		margin-bottom: 1em;
-		color: $orange;
-		font-weight: bold;
-		span {
-			color: $dark;
-			font-weight: normal;
-		}
+		color: $dark;
+		font-weight: normal;
+		list-style-position: inside;
 		li {
 			margin-bottom: 1em;
+			&::marker {
+				color: $orange;
+				font-weight: bold;
+			}
 		}
 	}
 	blockquote {
@@ -206,6 +207,19 @@
 	text-align: center;
 	@include r(1080) {
 		font-size: rem(20px);
+		margin-bottom: rem(20px);
+	}
+}
+
+.leica-parent {
+	padding-top: rem(38px);
+	padding-bottom: rem(38px);
+	padding-left: rem(20px);
+	padding-right: rem(20px);
+	background-color: #F0F6FA;
+	border-radius: 4px;
+	margin-bottom: rem(30px);
+	@include r(1080) {
 		margin-bottom: rem(20px);
 	}
 }

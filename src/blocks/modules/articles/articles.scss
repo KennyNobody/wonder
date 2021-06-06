@@ -14,7 +14,7 @@
 	&__item {
 		width: 100%;
 		&--50 {
-			width: calc(50% - 20px);
+			width: calc(50% - 10px);
 			@include r(1080) {
 				width: 100%;
 			}

@@ -3362,7 +3362,7 @@ button {
 }
 
 .articles__item--50 {
-  width: calc(50% - 20px);
+  width: calc(50% - 10px);
 }
 
 .articles__item--33 {
@@ -4439,6 +4439,11 @@ button {
   flex-shrink: 0;
 }
 
+.footer__icon-link strong {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
 .footer__logo {
   margin-bottom: 0.9375rem;
   display: inline-block;
@@ -5247,6 +5252,7 @@ button {
 .text img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .text i,
@@ -5296,34 +5302,34 @@ button {
 
 .text ul {
   list-style-type: disc;
-  padding-left: 18px;
   margin-bottom: 1em;
-  color: #C9E0EC;
-}
-
-.text ul span {
   color: #133A4B;
+  list-style-position: inside;
 }
 
 .text ul li {
   margin-bottom: 1em;
 }
 
-.text ol {
-  list-style-type: decimal;
-  padding-left: 18px;
-  margin-bottom: 1em;
-  color: #FA873D;
-  font-weight: bold;
+.text ul li::marker {
+  color: #C9E0EC;
 }
 
-.text ol span {
+.text ol {
+  list-style-type: decimal;
+  margin-bottom: 1em;
   color: #133A4B;
   font-weight: normal;
+  list-style-position: inside;
 }
 
 .text ol li {
   margin-bottom: 1em;
+}
+
+.text ol li::marker {
+  color: #FA873D;
+  font-weight: bold;
 }
 
 .text blockquote {
@@ -5427,6 +5433,16 @@ button {
   font-size: 1.625rem;
   margin-bottom: 1.875rem;
   text-align: center;
+}
+
+.leica-parent {
+  padding-top: 2.375rem;
+  padding-bottom: 2.375rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #F0F6FA;
+  border-radius: 4px;
+  margin-bottom: 1.875rem;
 }
 
 @media all and (min-width: 0px) {
@@ -5839,6 +5855,10 @@ button {
 
   .accent-block {
     font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .leica-parent {
     margin-bottom: 1.25rem;
   }
 }
